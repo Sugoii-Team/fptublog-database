@@ -39,7 +39,7 @@ CREATE TABLE account (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
     email               VARCHAR(320)        NOT NULL UNIQUE,
-    alternative_email   VARCHAR(320)        UNIQUE NULL,
+    alternative_email   VARCHAR(320)        UNIQUE,
     firstname           NVARCHAR(10)        NOT NULL,
     lastname            NVARCHAR(10)        NOT NULL,
     password            CHAR(64)            NULL,
@@ -85,7 +85,7 @@ CREATE TABLE blog (
     author_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account(id),
     title               NVARCHAR(100)       NOT NULL,
     content             NVARCHAR(4000)      NOT NULL,
-    posted_datetime     BIGINT              NOT NULL,
+    created_datetime    BIGINT              NOT NULL,
     status_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES blog_status(id),
     category_id         UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES category(id),
     reviewer_id         UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account_lecturer(id),
