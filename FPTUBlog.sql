@@ -7,39 +7,39 @@ GO
 CREATE TABLE major (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                NVARCHAR(100)       NOT NULL,
+    name                NVARCHAR(100)       NOT NULL UNIQUE,
 )
 
 CREATE TABLE field (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                NVARCHAR(100)       NOT NULL,
+    name                NVARCHAR(100)       NOT NULL UNIQUE,
 )
 
 CREATE TABLE category (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                NVARCHAR(100)       NOT NULL,
+    name                NVARCHAR(100)       NOT NULL UNIQUE,
     field_id            UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES field(id),
 )
 
 CREATE TABLE tag (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                NVARCHAR(100)       NOT NULL,
+    name                NVARCHAR(100)       NOT NULL UNIQUE,
 )
 
 CREATE TABLE account_status (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                VARCHAR(10)         NOT NULL,
+    name                VARCHAR(10)         NOT NULL UNIQUE,
 )
 
 CREATE TABLE account (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
     email               VARCHAR(320)        NOT NULL UNIQUE,
-    alternative_email   VARCHAR(320)        UNIQUE,
+    alternative_email   VARCHAR(320)        NOT NULL UNIQUE,
     firstname           NVARCHAR(10)        NOT NULL,
     lastname            NVARCHAR(10)        NOT NULL,
     password            CHAR(64)            NULL,
@@ -70,13 +70,13 @@ CREATE TABLE account_lecturer_field (
 CREATE TABLE blog_status (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                VARCHAR(10)         NOT NULL,
+    name                VARCHAR(10)         NOT NULL UNIQUE,
 )
 
 CREATE TABLE rate (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    star                varchar(5)          NOT NULL,
+    star                varchar(5)          NOT NULL UNIQUE,
 )
 
 CREATE TABLE blog (
@@ -119,7 +119,7 @@ CREATE TABLE vote (
 CREATE TABLE comment_status (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                VARCHAR(10)         NOT NULL,
+    name                VARCHAR(10)         NOT NULL UNIQUE,
 )
 
 CREATE TABLE comment (
@@ -143,7 +143,7 @@ CREATE TABLE notification (
 CREATE TABLE award (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                NVARCHAR(100)       NOT NULL,
+    name                NVARCHAR(100)       NOT NULL UNIQUE,
     icon_url            VARCHAR(2084)       NULL,
 )
 
