@@ -88,7 +88,7 @@ CREATE TABLE blog (
     created_datetime    BIGINT              NOT NULL,
     status_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES blog_status(id),
     category_id         UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES category(id),
-    reviewer_id         UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account_lecturer(id),
+    reviewer_id         UNIQUEIDENTIFIER    NULL FOREIGN KEY REFERENCES account_lecturer(id),
     review_datetime     BIGINT              NOT NULL,
     views               INT                 NOT NULL,
 )
