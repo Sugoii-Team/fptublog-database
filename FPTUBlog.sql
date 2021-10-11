@@ -82,6 +82,7 @@ CREATE TABLE blog (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
     author_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account(id),
+    thumbnail_url       VARCHAR(2084)       NULL,
     title               NVARCHAR(70)        NOT NULL,
     content             NVARCHAR(max)       NOT NULL,
     description         NVARCHAR(150)       NOT NULL,

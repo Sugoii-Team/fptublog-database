@@ -1,0 +1,4 @@
+insert into dbo.account (id, email, alternative_email, firstname, lastname, avatar_url, description, status_id)
+values  (N'BF1E433E-F36B-1410-8934-008CAF34AFE2', N'kylqse150864@fpt.edu.vn', N'quangky.it@gmail.com', N'Lê', N'Quang Kỳ', N'https://media.discordapp.net/attachments/872386796045099016/892746721757638676/image0.png?width=706&height=675', N'Người viết lời biết code.', N'B81E433E-F36B-1410-8934-008CAF34AFE2'),
+        (N'F51E433E-F36B-1410-8934-008CAF34AFE2', N'thanhppse151067@fpt.edu.vn', N'thanhppse151067@fpt.edu.vn', N'Phan Phước', N'Thành', N'https://lh3.googleusercontent.com/a-/AOh14Gg1_EipMpqf1s8kQvGMCrl_-VDesGFDVKPmKvS0=s96-c', null, N'B81E433E-F36B-1410-8934-008CAF34AFE2'),
+        (N'BB0A433E-F36B-1410-8935-008CAF34AFE2', N'datdxse150699@fpt.edu.vn', N'datdxse150699@fpt.edu.vn', N'Đặng', N'Xuân Đạt', N'https://cdn.discordapp.com/attachments/872386796045099016/887884989239283752/unknown.png', N'Ông trùm C#', N'B81E433E-F36B-1410-8934-008CAF34AFE2');
