@@ -40,9 +40,6 @@ CREATE TABLE account (
                                             PRIMARY KEY,
     email               VARCHAR(320)        NOT NULL UNIQUE,
     alternative_email   VARCHAR(320)        NOT NULL UNIQUE,
-    firstname           NVARCHAR(10)        NOT NULL,
-    lastname            NVARCHAR(10)        NOT NULL,
-    password            CHAR(64)            NULL,
     avatar_url          VARCHAR(2084)       NULL,
     description         NVARCHAR(300)       NULL,
     status_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account_status(id),
@@ -76,20 +73,21 @@ CREATE TABLE blog_status (
 CREATE TABLE rate (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    star                varchar(5)          NOT NULL UNIQUE,
+    star                VARCHAR(5)          NOT NULL UNIQUE,
 )
 
 CREATE TABLE blog (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
     author_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account(id),
-    title               NVARCHAR(100)       NOT NULL,
-    content             NVARCHAR(4000)      NOT NULL,
+    title               NVARCHAR(70)        NOT NULL,
+    content             NVARCHAR(max)     NOT NULL,
+    description         NVARCHAR(150)       NOT NULL,
     created_datetime    BIGINT              NOT NULL,
     status_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES blog_status(id),
     category_id         UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES category(id),
     reviewer_id         UNIQUEIDENTIFIER    NULL FOREIGN KEY REFERENCES account_lecturer(id),
-    review_datetime     BIGINT              NOT NULL,
+    review_datetime     BIGINT              NULL,
     views               INT                 NOT NULL,
 )
 
@@ -159,4 +157,9 @@ CREATE TABLE lecturer_award (
                                             PRIMARY KEY,
     lecturer_id         UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES account_lecturer(id),
     award_id            UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES award(id),
+)
+
+CREATE TABLE admin (
+    username            VARCHAR(15)         PRIMARY KEY,
+    password            CHAR(64),
 )
