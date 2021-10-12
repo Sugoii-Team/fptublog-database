@@ -1,0 +1,17 @@
+insert into dbo.major (id, name)
+values  (N'340A433E-F36B-1410-8935-008CAF34AFE2', N'Artificial Intelligence'),
+        (N'350A433E-F36B-1410-8935-008CAF34AFE2', N'Digital Art & Design'),
+        (N'3A0A433E-F36B-1410-8935-008CAF34AFE2', N'Digital Marketing'),
+        (N'A30A433E-F36B-1410-8935-008CAF34AFE2', N'English Language'),
+        (N'8B0A433E-F36B-1410-8935-008CAF34AFE2', N'Finance'),
+        (N'B70A433E-F36B-1410-8935-008CAF34AFE2', N'Graphic Design'),
+        (N'8E0A433E-F36B-1410-8935-008CAF34AFE2', N'Hotel Management'),
+        (N'320A433E-F36B-1410-8935-008CAF34AFE2', N'Information Assurance'),
+        (N'AD0A433E-F36B-1410-8935-008CAF34AFE2', N'Information system'),
+        (N'910A433E-F36B-1410-8935-008CAF34AFE2', N'International Business'),
+        (N'A80A433E-F36B-1410-8935-008CAF34AFE2', N'Internet of things'),
+        (N'B20A433E-F36B-1410-8935-008CAF34AFE2', N'Japanese Language'),
+        (N'990A433E-F36B-1410-8935-008CAF34AFE2', N'Marketing'),
+        (N'940A433E-F36B-1410-8935-008CAF34AFE2', N'Multimedia communication'),
+        (N'EE1E433E-F36B-1410-8934-008CAF34AFE2', N'Software Engineering'),
+        (N'9E0A433E-F36B-1410-8935-008CAF34AFE2', N'Tourism and Travel Management');

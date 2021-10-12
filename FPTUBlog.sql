@@ -32,7 +32,7 @@ CREATE TABLE tag (
 CREATE TABLE account_status (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                VARCHAR(10)         NOT NULL UNIQUE,
+    name                VARCHAR(20)         NOT NULL UNIQUE,
 )
 
 CREATE TABLE account (
@@ -85,7 +85,7 @@ CREATE TABLE blog (
     thumbnail_url       VARCHAR(2084)       NULL,
     title               NVARCHAR(70)        NOT NULL,
     content             NVARCHAR(max)       NOT NULL,
-    description         NVARCHAR(150)       NOT NULL,
+    description         NVARCHAR(250)       NOT NULL,
     created_datetime    BIGINT              NOT NULL,
     status_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES blog_status(id),
     category_id         UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES category(id),
