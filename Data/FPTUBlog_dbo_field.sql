@@ -1,9 +1,8 @@
-insert into dbo.field (id, name)
-values  (N'D41E433E-F36B-1410-8934-008CAF34AFE2', N'Artificial intelligence '),
-        (N'CC1E433E-F36B-1410-8934-008CAF34AFE2', N'Back-end'),
-        (N'D71E433E-F36B-1410-8934-008CAF34AFE2', N'Cloud computing'),
-        (N'DE1E433E-F36B-1410-8934-008CAF34AFE2', N'Computer science'),
-        (N'D31E433E-F36B-1410-8934-008CAF34AFE2', N'Database'),
-        (N'D21E433E-F36B-1410-8934-008CAF34AFE2', N'Front-end'),
-        (N'190B433E-F36B-1410-8935-008CAF34AFE2', N'Mobile'),
-        (N'C61E433E-F36B-1410-8934-008CAF34AFE2', N'Programming fundamental');
+INSERT INTO FPTUBlog.dbo.field (id, name) VALUES (N'D41E433E-F36B-1410-8934-008CAF34AFE2', N'Artificial intelligence ');
+INSERT INTO FPTUBlog.dbo.field (id, name) VALUES (N'CC1E433E-F36B-1410-8934-008CAF34AFE2', N'Back-end');
+INSERT INTO FPTUBlog.dbo.field (id, name) VALUES (N'D71E433E-F36B-1410-8934-008CAF34AFE2', N'Cloud computing');
+INSERT INTO FPTUBlog.dbo.field (id, name) VALUES (N'DE1E433E-F36B-1410-8934-008CAF34AFE2', N'Computer science');
+INSERT INTO FPTUBlog.dbo.field (id, name) VALUES (N'D31E433E-F36B-1410-8934-008CAF34AFE2', N'Database');
+INSERT INTO FPTUBlog.dbo.field (id, name) VALUES (N'D21E433E-F36B-1410-8934-008CAF34AFE2', N'Front-end');
+INSERT INTO FPTUBlog.dbo.field (id, name) VALUES (N'190B433E-F36B-1410-8935-008CAF34AFE2', N'Mobile');
+INSERT INTO FPTUBlog.dbo.field (id, name) VALUES (N'C61E433E-F36B-1410-8934-008CAF34AFE2', N'Programming fundamental');

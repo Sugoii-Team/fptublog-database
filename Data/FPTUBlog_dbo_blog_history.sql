@@ -1,0 +1,6 @@
+INSERT INTO FPTUBlog.dbo.blog_history (id, created_datetime, views) VALUES (N'6082433E-F36B-1410-893A-008CAF34AFE2', 1633946002417, 0);
+INSERT INTO FPTUBlog.dbo.blog_history (id, created_datetime, views) VALUES (N'6282433E-F36B-1410-893A-008CAF34AFE2', 1633963449531, 0);
+INSERT INTO FPTUBlog.dbo.blog_history (id, created_datetime, views) VALUES (N'6882433E-F36B-1410-893A-008CAF34AFE2', 1633964311139, 0);
+INSERT INTO FPTUBlog.dbo.blog_history (id, created_datetime, views) VALUES (N'6F82433E-F36B-1410-893A-008CAF34AFE2', 1633965382619, 0);
+INSERT INTO FPTUBlog.dbo.blog_history (id, created_datetime, views) VALUES (N'7582433E-F36B-1410-893A-008CAF34AFE2', 1633966843561, 0);
+INSERT INTO FPTUBlog.dbo.blog_history (id, created_datetime, views) VALUES (N'7782433E-F36B-1410-893A-008CAF34AFE2', 1634029301681, 0);

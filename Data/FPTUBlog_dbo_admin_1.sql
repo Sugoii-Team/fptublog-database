@@ -1,2 +1,0 @@
-insert into dbo.admin (username, password)
-values  (N'Admin', N'3B612C75A7B5048A435FB6EC81E52FF92D6D795A8B5A9C17070F6A63C97A53B2');
