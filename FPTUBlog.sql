@@ -45,6 +45,7 @@ CREATE TABLE account (
     avatar_url          VARCHAR(2084)       NULL,
     description         NVARCHAR(300)       NULL,
     status_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account_status(id),
+    role                VARCHAR(10)         NOT NULL,
 )
 
 CREATE TABLE account_student (
@@ -69,13 +70,20 @@ CREATE TABLE account_lecturer_field (
 CREATE TABLE blog_status (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                VARCHAR(10)         NOT NULL UNIQUE,
+    name                VARCHAR(20)         NOT NULL UNIQUE,
 )
 
 CREATE TABLE rate (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
     star                VARCHAR(5)          NOT NULL UNIQUE,
+)
+
+CREATE TABLE blog_history (
+    id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
+                                            PRIMARY KEY,
+    created_datetime    BIGINT              NOT NULL,
+    views               INT                 NOT NULL,
 )
 
 CREATE TABLE blog (
@@ -91,7 +99,7 @@ CREATE TABLE blog (
     category_id         UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES category(id),
     reviewer_id         UNIQUEIDENTIFIER    NULL FOREIGN KEY REFERENCES account_lecturer(id),
     review_datetime     BIGINT              NULL,
-    views               INT                 NOT NULL,
+    blog_history_id     UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES blog_history(id),
 )
 
 CREATE TABLE blog_rate (
@@ -120,7 +128,7 @@ CREATE TABLE vote (
 CREATE TABLE comment_status (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
-    name                VARCHAR(10)         NOT NULL UNIQUE,
+    name                VARCHAR(20)         NOT NULL UNIQUE,
 )
 
 CREATE TABLE comment (

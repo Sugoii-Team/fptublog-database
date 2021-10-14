@@ -8,13 +8,13 @@
     <node x="-449.2829331421382" y="78.17014788336385">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.comment</node>
     <node x="460.0259146341463" y="-23.224727177677636">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account</node>
     <node x="973.39497716895" y="285.71838855126447">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account_lecturer</node>
-    <node x="-132.0570235739475" y="-400.70584538721437">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.admin</node>
     <node x="1072.9997309767527" y="863.3809593510243">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_tag</node>
+    <node x="-422.2829331421382" y="-416.85823380778555">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.admin</node>
     <node x="-422.2829331421382" y="-212.89402470838792">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.comment_status</node>
     <node x="1316.1301867502261" y="660.458114803195">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.category</node>
     <node x="-150.7595087600061" y="390.3164135676551">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.rate</node>
-    <node x="725.4079689697015" y="957.4639818539181">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_status</node>
     <node x="964.8949771689497" y="-180.72472717767764">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account_student</node>
+    <node x="639.8953243902072" y="876.8809593510243">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_status</node>
     <node x="1294.6301867502261" y="275.9311572894203">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account_lecturer_field</node>
     <node x="255.95579943123482" y="380.5927137230339">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.vote</node>
     <node x="688.4079689697015" y="458.50565941311504">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog</node>
@@ -22,21 +22,21 @@
     <node x="1303.6301867502261" y="-180.72472717767764">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.student_award</node>
     <node x="1328.6301867502261" y="476.7083534674324">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.field</node>
     <node x="1396.2255918592832" y="876.8809593510243">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.tag</node>
-    <node x="956.3949771689496" y="52.49683068679337">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.lecturer_award</node>
     <node x="-160.00396403133772" y="577.9877870606188">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_rate</node>
+    <node x="956.3949771689496" y="52.49683068679337">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.lecturer_award</node>
     <node x="1320.1301867502261" y="44.275272822322364">090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.award</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_rate" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.rate" relationship="REFERENCES">
+      <point x="-15.697399689242502" y="-19.666342984310745" />
+      <point x="-4.941854960574119" y="-13.734294569395786" />
+    </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.student_award" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.award" relationship="REFERENCES">
       <point x="-0.0460145743134035" y="2.200238873159506" />
       <point x="1417.0841721759127" y="-7.724727177677664" />
       <point x="1417.1301867502261" y="-7.724727177677664" />
       <point x="0.0" y="60.5" />
-    </edge>
-    <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_rate" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.rate" relationship="REFERENCES">
-      <point x="-15.697399689242502" y="-19.666342984310745" />
-      <point x="-4.941854960574119" y="-13.734294569395786" />
     </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account_lecturer" relationship="REFERENCES">
       <point x="-14.90617896239587" y="-122.23945713925133" />
@@ -84,18 +84,18 @@
       <point x="556.6144013382218" y="133.25418183249698" />
       <point x="-41.16795286306365" y="28.47890901017462" />
     </edge>
+    <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account_lecturer" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account" relationship="REFERENCES">
+      <point x="-72.53674310725273" y="0.7189364197641339" />
+      <point x="998.3582340616972" y="199.16571914003794" />
+      <point x="622.5259146341464" y="199.16571914003794" />
+      <point x="32.5" y="128.0" />
+    </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.comment" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.comment" relationship="REFERENCES">
       <point x="-54.48948577233074" y="61.71473137447046" />
       <point x="-394.2724189144689" y="360.3938020283233" />
       <point x="-634.0722577011366" y="360.3938020283233" />
       <point x="-634.0722577011366" y="192.67014788336385" />
       <point x="-109.5" y="-0.0" />
-    </edge>
-    <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account_lecturer" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account" relationship="REFERENCES">
-      <point x="-72.53674310725273" y="0.7189364197641339" />
-      <point x="998.3582340616972" y="199.16571914003794" />
-      <point x="622.5259146341464" y="199.16571914003794" />
-      <point x="32.5" y="128.0" />
     </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.vote" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog" relationship="REFERENCES">
       <point x="55.56912679985845" y="17.73933672573287" />
@@ -119,22 +119,22 @@
     </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_status" relationship="REFERENCES">
       <point x="29.375" y="-168.5" />
-      <point x="835.2829689697015" y="722.2790968032864" />
-      <point x="807.9529830000384" y="722.2790968032864" />
+      <point x="839.2829689697015" y="722.2790968032864" />
+      <point x="722.4403384205441" y="722.2790968032864" />
       <point x="2.0450140303369437" y="-26.385124655250593" />
     </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_tag" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog" relationship="REFERENCES">
       <point x="-50.25" y="-60.5" />
       <point x="1123.2497309767527" y="905.0089664427767" />
-      <point x="866.6370406680478" y="905.0089664427767" />
+      <point x="870.6370406680478" y="905.0089664427767" />
       <point x="60.729071698346274" y="120.9450289507165" />
-    </edge>
-    <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account_status" relationship="REFERENCES">
-      <point x="0.0" y="-128.0" />
-      <point x="0.0" y="47.0" />
     </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.category" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.field" relationship="REFERENCES">
       <point x="0.0" y="-60.5" />
+      <point x="0.0" y="47.0" />
+    </edge>
+    <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.account_status" relationship="REFERENCES">
+      <point x="0.0" y="-128.0" />
       <point x="0.0" y="47.0" />
     </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.comment" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.comment_status" relationship="REFERENCES">
@@ -157,15 +157,15 @@
       <point x="1417.1301867502261" y="523.8348855546315" />
       <point x="-20.931561639285974" y="0.1265320871990525" />
     </edge>
-    <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_tag" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.tag" relationship="REFERENCES">
-      <point x="43.73915246722174" y="-19.157089258119868" />
-      <point x="1217.2388834439744" y="913.2751345508539" />
-      <point x="-0.4972292282213857" y="-10.605824800170467" />
-    </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_rate" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog" relationship="REFERENCES">
       <point x="48.40327099767393" y="-24.982127647503717" />
       <point x="805.9079689697015" y="627.005659413115" />
       <point x="0.0" y="168.5" />
+    </edge>
+    <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_tag" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.tag" relationship="REFERENCES">
+      <point x="43.73915246722174" y="-19.157089258119868" />
+      <point x="1217.2388834439744" y="913.2751345508539" />
+      <point x="-0.4972292282213857" y="-10.605824800170467" />
     </edge>
     <edge source="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog" target="090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.category" relationship="REFERENCES">
       <point x="88.125" y="-168.5" />
@@ -191,9 +191,9 @@
       <point x="-48.75" y="33.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="0.7524759284731767" showDependencies="false" x="535.3254240614946" y="643.101632753859" />
+  <settings layout="Hierarchic" zoom="1.0524759284731766" showDependencies="false" x="-30.00352871985922" y="-107.961380121545" />
   <SelectedNodes>
-    <node>090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.blog_rate</node>
+    <node>090e83d7-d66d-4faa-8bd6-6317f287393b.TABLE:FPTUBlog.dbo.admin</node>
   </SelectedNodes>
   <Categories>
     <Category>Columns</Category>
