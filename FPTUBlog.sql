@@ -53,6 +53,7 @@ CREATE TABLE account_student (
                                             FOREIGN KEY REFERENCES account(id),
     school_year         TINYINT             NULL,
     major_id            UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES major(id),
+    experience_point    INT                 NOT NULL DEFAULT 0,
 )
 
 CREATE TABLE account_lecturer (
@@ -100,6 +101,7 @@ CREATE TABLE blog (
     reviewer_id         UNIQUEIDENTIFIER    NULL FOREIGN KEY REFERENCES account_lecturer(id),
     review_datetime     BIGINT              NULL,
     blog_history_id     UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES blog_history(id),
+    avg_rate            FLOAT               NULL,
 )
 
 CREATE TABLE blog_rate (
@@ -154,23 +156,174 @@ CREATE TABLE award (
                                             PRIMARY KEY,
     name                NVARCHAR(100)       NOT NULL UNIQUE,
     icon_url            VARCHAR(2084)       NULL,
+    point               INT                 NOT NULL,
 )
 
-CREATE TABLE student_award (
-    id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
-                                            PRIMARY KEY,
-    student_id          UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES account_student(id),
-    award_id            UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES award(id),
-)
-
-CREATE TABLE lecturer_award (
+CREATE TABLE lecturer_student_award (
     id                  UNIQUEIDENTIFIER DEFAULT NEWSEQUENTIALID()
                                             PRIMARY KEY,
     lecturer_id         UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES account_lecturer(id),
+    student_id          UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES account_student(id),
     award_id            UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES award(id),
+    CONSTRAINT UNIQUE  (lecturer_id, student_id, award_id),
 )
 
 CREATE TABLE admin (
     username            VARCHAR(15)         PRIMARY KEY,
     password            CHAR(64),
 )
+
+CREATE TRIGGER update_avg_rate_after_insert_blog_rate ON blog_rate
+AFTER INSERT AS
+BEGIN
+    DECLARE @blog_id UNIQUEIDENTIFIER;
+
+    SELECT @blog_id = blog_id
+    FROM inserted;
+
+    DECLARE @count INT;
+    DECLARE @total FLOAT;
+
+    SELECT @count = SUM(amount), @total = SUM(amount * CAST(star AS FLOAT))
+    FROM  blog_rate
+    INNER JOIN rate on blog_rate.rate_id = rate.id
+    WHERE blog_rate.blog_id = @blog_id;
+
+    IF @count = 0
+        UPDATE blog
+        SET avg_rate = 0
+        WHERE id = @blog_id;
+    ELSE
+        UPDATE blog
+        SET avg_rate = @total/@count
+        WHERE id = @blog_id;
+END
+GO
+
+CREATE TRIGGER update_avg_rate_after_update_blog_rate ON blog_rate
+AFTER UPDATE AS
+BEGIN
+    DECLARE @blog_id UNIQUEIDENTIFIER;
+
+    SELECT @blog_id = blog_id
+    FROM deleted;
+
+    DECLARE @count INT;
+    DECLARE @total FLOAT;
+
+    SELECT @count = SUM(amount), @total = SUM(amount * CAST(star AS FLOAT))
+    FROM  blog_rate
+    INNER JOIN rate on blog_rate.rate_id = rate.id
+    WHERE blog_rate.blog_id = @blog_id;
+
+    IF @count = 0
+        UPDATE blog
+        SET avg_rate = 0
+        WHERE id = @blog_id;
+    ELSE
+        UPDATE blog
+        SET avg_rate = @total/@count
+        WHERE id = @blog_id;
+END
+GO
+
+CREATE TRIGGER update_avg_rate_after_delete_blog_rate ON blog_rate
+AFTER DELETE AS
+BEGIN
+    DECLARE @blog_id UNIQUEIDENTIFIER;
+
+    SELECT @blog_id = blog_id
+    FROM deleted;
+
+    DECLARE @count INT;
+    DECLARE @total FLOAT;
+
+    SELECT @count = SUM(amount), @total = SUM(amount * CAST(star AS FLOAT))
+    FROM  blog_rate
+    INNER JOIN rate on blog_rate.rate_id = rate.id
+    WHERE blog_rate.blog_id = @blog_id;
+
+    IF @count = 0
+        UPDATE blog
+        SET avg_rate = 0
+        WHERE id = @blog_id;
+    ELSE
+        UPDATE blog
+        SET avg_rate = @total/@count
+        WHERE id = @blog_id;
+END
+GO
+
+CREATE TRIGGER update_experience_point_after_insert_vote ON vote
+AFTER INSERT AS
+BEGIN
+    DECLARE @blogId UNIQUEIDENTIFIER;
+    DECLARE @rateId UNIQUEIDENTIFIER;
+
+    SELECT @blogId = blog_id, @rateId = rate_id
+    FROM inserted;
+
+    DECLARE @star INT;
+    SELECT @star = CAST(star AS INT) FROM rate WHERE id = @rateId;
+
+    IF @star >= 3
+        UPDATE account_student
+        SET experience_point = experience_point + @star - 2
+        WHERE id = (SELECT author_id FROM blog WHERE id = @blogId);
+END
+GO
+
+CREATE TRIGGER update_experience_point_after_delete_vote ON vote
+AFTER DELETE AS
+BEGIN
+    DECLARE @blogId UNIQUEIDENTIFIER;
+    DECLARE @rateId UNIQUEIDENTIFIER;
+
+    SELECT @blogId = blog_id, @rateId = rate_id
+    FROM deleted;
+
+    DECLARE @star INT;
+    SELECT @star = CAST(star AS INT) FROM rate WHERE id = @rateId;
+
+    IF @star >= 3
+        UPDATE account_student
+        SET experience_point = experience_point - @star + 2
+        WHERE id = (SELECT author_id FROM blog WHERE id = @blogId);
+END
+GO
+
+CREATE TRIGGER update_experience_point_after_insert_lecturer_student_award ON lecturer_student_award
+AFTER INSERT AS
+BEGIN
+    DECLARE @studentId UNIQUEIDENTIFIER;
+    DECLARE @awardId UNIQUEIDENTIFIER;
+
+    SELECT @studentId = student_id, @awardId = award_id
+    FROM inserted;
+
+    DECLARE @point INT;
+    SELECT @point = point FROM award WHERE id = @awardId;
+
+    UPDATE account_student
+    SET experience_point = experience_point + @point
+    WHERE id = @studentId;
+END
+GO
+
+CREATE TRIGGER update_experience_point_after_delete_lecturer_student_award ON lecturer_student_award
+AFTER DELETE AS
+BEGIN
+    DECLARE @studentId UNIQUEIDENTIFIER;
+    DECLARE @awardId UNIQUEIDENTIFIER;
+
+    SELECT @studentId = student_id, @awardId = award_id
+    FROM deleted;
+
+    DECLARE @point INT;
+    SELECT @point = point FROM award WHERE id = @awardId;
+
+    UPDATE account_student
+    SET experience_point = experience_point - @point
+    WHERE id = @studentId;
+END
+GO

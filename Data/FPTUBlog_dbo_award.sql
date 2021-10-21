@@ -1,0 +1,2 @@
+INSERT INTO FPTUBlog.dbo.award (id, name, icon_url, point) VALUES (N'BB37433E-F36B-1410-8945-008CAF34AFE2', N'Hello', null, 50);
+INSERT INTO FPTUBlog.dbo.award (id, name, icon_url, point) VALUES (N'C237433E-F36B-1410-8945-008CAF34AFE2', N'Hello con cặc', null, 15);
