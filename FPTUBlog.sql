@@ -165,13 +165,14 @@ CREATE TABLE lecturer_student_award (
     lecturer_id         UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES account_lecturer(id),
     student_id          UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES account_student(id),
     award_id            UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES award(id),
-    CONSTRAINT UNIQUE  (lecturer_id, student_id, award_id),
+    CONSTRAINT unique_lecturerId_studentId_awardId UNIQUE  (lecturer_id, student_id, award_id),
 )
 
 CREATE TABLE admin (
     username            VARCHAR(15)         PRIMARY KEY,
     password            CHAR(64),
 )
+GO
 
 CREATE TRIGGER update_avg_rate_after_insert_blog_rate ON blog_rate
 AFTER INSERT AS
