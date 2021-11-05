@@ -48,6 +48,12 @@ CREATE TABLE account (
     role                VARCHAR(10)         NOT NULL,
 )
 
+CREATE TABLE banned_info (
+    account_id          UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account(id)
+                                            PRIMARY KEY,
+    message             NVARCHAR(200)       NOT NULL,
+)
+
 CREATE TABLE account_student (
     id                  UNIQUEIDENTIFIER    PRIMARY KEY
                                             FOREIGN KEY REFERENCES account(id),
@@ -66,6 +72,7 @@ CREATE TABLE account_lecturer_field (
                                             PRIMARY KEY,
     lecturer_id         UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES account_lecturer(id),
     field_id            UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES field(id),
+    CONSTRAINT unique_lecturer_id_field_id UNIQUE (lecturer_id, field_id),
 )
 
 CREATE TABLE blog_status (
@@ -92,7 +99,7 @@ CREATE TABLE blog (
                                             PRIMARY KEY,
     author_id           UNIQUEIDENTIFIER    NOT NULL FOREIGN KEY REFERENCES account(id),
     thumbnail_url       VARCHAR(2084)       NULL,
-    title               NVARCHAR(70)        NOT NULL,
+    title               NVARCHAR(100)        NOT NULL,
     content             NVARCHAR(max)       NOT NULL,
     description         NVARCHAR(250)       NOT NULL,
     created_datetime    BIGINT              NOT NULL,
@@ -110,6 +117,7 @@ CREATE TABLE blog_rate (
     blog_id             UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES blog(id),
     rate_id             UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES rate(id),
     amount              INT,
+    CONSTRAINT unique_blog_id_rate_id UNIQUE (blog_id, rate_id),
 )
 
 CREATE TABLE blog_tag (
@@ -117,6 +125,7 @@ CREATE TABLE blog_tag (
                                             PRIMARY KEY,
     blog_id             UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES blog(id),
     tag_id              UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES tag(id),
+    CONSTRAINT unique_blog_id_tag_id UNIQUE (blog_id, tag_id),
 )
 
 CREATE TABLE vote (
@@ -125,6 +134,7 @@ CREATE TABLE vote (
     account_id          UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES account(id),
     blog_id             UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES blog(id),
     rate_id             UNIQUEIDENTIFIER    FOREIGN KEY REFERENCES rate(id),
+    CONSTRAINT unique_account_id_blog_id_rate_id UNIQUE (account_id, blog_id, rate_id),
 )
 
 CREATE TABLE comment_status (

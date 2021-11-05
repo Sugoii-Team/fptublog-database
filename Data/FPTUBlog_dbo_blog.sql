@@ -1,415 +1,4 @@
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'3C1F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', N'https://miro.medium.com/max/300/1*1MACDnN2jxctOGGWeISIlQ.png', N'C Programming Basics – C Language Tutorial For Beginners', N'C is a high level, general purpose programming language initially  developed by Dennis Ritchie in 1972 for the Unix operating system. The  Unix operating system and most Unix applications are written in C and  today is still one of the most widely used programming languages around. In fact C is so popular that most modern languages have either directly or indirectly borrowed from C in one way or another. Languages based on C or C syntax include Java, JavaScript, C#, Objective-C, PHP and  Python. Learning to program in C can therefore serve as a great base for learning other programming languages. If you would like to learn the  basics of C, then sign up for the [C Programming For Beginners](https://www.udemy.com/course/c-programming-for-beginners/?tc=blog.cprogrammingbasics&couponCode=half-off-for-blog) course. This course is designed to teach beginners how to program in C  as well as teaching students who are familiar with languages line Java,  Ruby or Python. The course includes lessons on the fundamentals of  programming and how to program on both Mac and Windows. The course  includes the details of C and includes advanced topics like memory  allocation, the stack and heap and binary file IO.
-
-
-6082433E-F36B-1410-893A-008CAF34AFE2
-Here are some C programming basics for those new to programming in C.
-
-## **C Program Basics**
-
-All C programs basically contain the following elements:
-
-1. Preprocessor Commands
-
-2. Functions
-
-3. Variables
-
-4. Statements and Expressions
-
-5. Comments
-
-## **Preprocessor Commands**
-
-These commands tell the processor to do something before compilation. Preprocessor commands generally consist of include statements. The  include command is called using the hash key and these statements tell C to include the contents of the included file before it continues on to  process the rest of the commands.
-
-The following is an example of a preprocessor command:
-
-\#include <stdio.h>
-
-This command tells C to include the functions within the stdio.h file before it moves onto the next function and compiles the functions  within this program. The stdio.h file includes functions like the printf and getchar functions so these functions are loaded and ready for use  by using the include directive.
-
-## **Functions**
-
-C programs mainly consist of functions and functions form the main  building blocks of a C program. Every C program must contain at least  one function called “main()”. The main function returns a variable and  is therefore prefaced by the keyword “int” to represent the integer it  returns. The integer is returned in the function using the return  keyword. Functions are delineated using curly brackets. Each set of  brackets marks a function. Curly braces are used to delineate code  blocks within the C programming environment.
-
-Here is a very basic example of a C program:
-
-```
-#include <stdio.h>
-int main()
-{
-/* My first C program */
-printf("I can program in C! \n");
-return 0;
-}
-```
-
-Note the inclusion of the stdio.h file so that we can access the  printf function and note the curly brackets to show that this is a  single code block. The stdio file is an acronym for “standard  input/output” and hence contains a lot of the input/output functions  used in C like the printf, getchar, and scanf functions.
-
-## **Variables in C**
-
-Like most programming languages, C allows for the declaration of  variables. There are two types of variables recognized by C namely,  local and global variables. Variables are declared by declaring the  variable type and assigning a name to the variable. Variable type can  include int which stores an integer, char which stores a single char,  float which stores floating point values and pointer which stores the  address of another variable.
-
-Local variables have a limited scope. Their scope is limited to the  duration of the programming block within which the variable is defined.  Local variables are declared at the top of the programming block to  which they apply. A local variable must be initialized by the  programmer. T', N'', 1633946002417, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'F71E433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1633947213007, N'6082433E-F36B-1410-893A-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'D50A433E-F36B-1410-8935-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', N'https://michaelscodingspot.com/wp-content/uploads/2021/08/reshaper-productivity-tricks.jpg', N'6 Hidden Productivity Gems in Resharper and Rider', N'One of the most impressive productivity tools in .NET development is [ReSharper](https://www.jetbrains.com/resharper/). I keep getting blown away by its capabilities with each release. Don’t  get me wrong here, I love Visual Studio, and it’s getting immensely  better as well. But whenever I think Visual Studio caught up, I discover some new amazing feature that leaves me dependent on ReSharper and [Rider](https://www.jetbrains.com/rider/) yet again.
-
-So in this blog post, I’ll tell you about 6 of ReSharper’s more  addicting features. Those that you might not have known about, but won’t be able to live without once you do.
-
-## 1. Ctrl + T, Ctrl + T + T, Ctrl + T + T + T
-
-You all know the excellent `Ctrl + T` command, which allows you to quickly find fields, files, and types. You might not have known, however, that you can click the `T` button once or twice more. Which makes it `Ctrl + T + T` and `Ctrl + T + T + T`. The first option allows you to search just for types.
-
-![Resharper go-to types](https://michaelscodingspot.com/wp-content/uploads/2021/08/ctrl-t-t.png)
-
-The second option `Ctrl + T + T + T` allows you to search for any text in your solution. Kind of like Visual Studio’s `Ctrl + Shift + F`, only nicer (in my humble opinion).
-
-![Find text ReSharper](https://michaelscodingspot.com/wp-content/uploads/2021/08/ctrl-t-t-t.png)
-
-## 2.  Opening Ctrl + T results as a list
-
-Navigation in a huge application can be pretty difficult. You don’t  always remember the exact field name you’re looking for. Or you might  remember you’re looking for something with the word `Home`, but the number of fields and classes fitting that search is huge. Using `Ctrl + T` shows just the first amount of results fitting in one screen. But if you search for something and hit `Shift + Enter`, you’ll see *all* results in a tool window. Just so:
-
-![Search as a list](https://michaelscodingspot.com/wp-content/uploads/2021/08/search-as-list.png)
-
-Now you can scroll over quickly or filter within these results to  find what you meant. This is so convenient I don’t feel I even deserve  it.
-
-## 3.  Value Origin, Value Destination
-
-This next feature is so addicting that once you start using it, you won’t be able to stop.
-
-ReSharper allows you to inspect any variable and see all possible  call stacks where you can get it from (as a parameter) and where it’s  going (as an argument). Let’s start with where you got it from. To use  the feature, either use the `Ctrl + Alt + Shift + A` shortcut for **Inspect this** or find **Inspect** in the right-click context menu.
-
-![R# Inspect this](https://michaelscodingspot.com/wp-content/uploads/2021/08/inspect-this.png)
-
-Clicking on **Value Origin** will show all possible paths to how `recording` could have been received. Like so:
-
-![Value origin](https://michaelscodingspot.com/wp-content/uploads/2021/08/value-origin.png)
-
-In this case, we got it as a parameter in the method `ShouldStopRecording`, which could have gotten it from any of the methods `AddRecordingResult`, `ContinueRecording`, `GetLastRecording`, or `GetRunningSessions`.
-
-To see all possible destinations of the `recording` variable, click on **Value Destination**, which will show:
-
-![Resharper value destination](https://michaelscodingspot.com/wp-content/uploads/2021/08/value-destination.png)
-
-This shows all the places this variable is going to be used or passed as an argument hence on. In this case, you can see that it’s used only  in `ShouldStopRecording` to access its properties.
-
-Both of these features make it really easy to get around in code.  Instead of using Find all references, or Find usages, which go by  methods, you’ll be able to find the path to a specific variable.
-
-## 4. Postfix completion templates
-
-You all know about Visual Studio snippets. And if you don’t, check out my other article [5 Productivity Tips in Visual Studio That You Should Know](https://michaelscodingspot.com/productivity-tips-in-visual-studio/). ReSharper has a similar feature that allows you to insert an expression into a template after you already typed it. Here’s an example. 
-
-![Postfix completion ReSharper](https://michaelscodingspot.com/wp-content/uploads/2021/08/postfix-completion-foreach.png)
-
-Once I hit `Enter` or `Tab`, ReSharper automatically creates a `foreach` statement.
-
-![Postfix completion foreach](https://michaelscodingspot.com/wp-content/uploads/2021/08/postfix-completion-foreach2.png) 
-
-This trick can be used for any collection.
-
-Here’s another example:
-
-![Postfix completion ReSharper if](https://michaelscodingspot.com/wp-content/uploads/2021/08/postfix-completion-if.png)
-
-Selecting the `if` postfix will create the following statement:
-
-![img](https://michaelscodingspot.com/wp-content/uploads/2021/08/postfix-completion-if2.png)
-
-There are a bunch of these and you can see the full list [here](https://www.jetbrains.com/help/resharper/Postfix_Templates.html#list).
-
-## 5. Solution-Wide Analysis
-
-With solution-wide analysis, ReSharper constantly analyzes your  entire solution and smartly finds errors and warnings. These are both  compilation errors and runtime errors. R# is smart that way. This can be used as a sort of sanity health check. Whenever you’re refactoring a  lot of code, this feature is really useful to make sure you’re not doing any mistakes. Any obvious mistakes that is—R# doesn’t find logical bugs instead of the developer just yet.
-
-Here’s how it looks like:
-
-![ReSharper solution-wide analysis](https://michaelscodingspot.com/wp-content/uploads/2021/08/solution-wide-analysis.png)
-
- 
-
-Solution-wide analysis is turned off by default for good reasons. It  eats up performance. At least when using Visual Studio + ReSharper. If  you’re using Rider, on the other hand, you probably won’t even notice  it’s on.
-
-## 6. Extract Class
-
-One of the most impressive things about ReSharper is its refactor capabilities. Most of them can be accessed from the **Refactor This** menu available with the `Ctrl + Shift + R` shortcut. One of the refactorings I like most is **Extract Class**. It will extract members like fields, properties, and methods into a new class, which will be created as a field in the original class. Here’s  an example:
-
-![Extract class ReSharper](https://michaelscodingspot.com/wp-content/uploads/2021/08/extract-class-1.png)
-
-When clicking `Ctrl + Shift + R` on the member **Sort**, the following dialog appears:
-
-![R# extract class dialog](https://michaelscodingspot.com/wp-content/uploads/2021/08/extract-class-2.png)
-
-Here you can pick and choose which members you want to extract. R# helps you by showing usages. In the example above, `Mean` uses `Sort` and you can extract them together.
-
-Once you choose the name of the extracted class (I chose `Sorter`) and the name of the reference to the extracted (`_sorter`), you’ll get this result:
-
-![Resharper extract class example](https://michaelscodingspot.com/wp-content/uploads/2021/08/extract-class-3.png)
-
-This makes the all too common action of breaking up a big class into smaller classes much easier.
-
-That’s it for this one, happy coding.', N'One of the most impressive productivity tools in .NET development is ReSharper. I keep getting blown away by its capabilities with each release.', 1633963449531, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'D10A433E-F36B-1410-8935-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634191467870, N'6282433E-F36B-1410-893A-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'0F0B433E-F36B-1410-8935-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', N'https://miro.medium.com/max/1400/1*Dl0F36mQqB_LNtA_dKd3ug.jpeg', N'Algorithms', N'Whether you want to land a high-paying job as a software developer or want to  land those exclusive gold medals in the competitive coding world.
-
-# What Are Algorithms?
-
-Simply explained an algorithm is a step by step process of solving a computational problem.
-
-We should always treat our computers as our less than intelligent friends, if you skip a step then the interpreter or compiler will return an  error.
-
-This is the stage where you ask, “so what is a program?”
-
-And I will answer back saying “It is also a step by step procedure for solving a problem.”
-
-At this stage, you are very confused, ready to give up and do not want to see coding ever again.
-
-Before you do let’s compare the differences between program and algorithm.
-
-
-
-Let''s go through the table above in more detail:
-
-## Algorithms in Design Phase
-
-In software development, we have the design and implementation phase. In  the design phase we break down our business problem into smaller parts.
-
-Then write these small sections as algorithms as to see if they will make business sense, and iron out the inner workings.
-
-## Program In Design Phase
-
-Once our business problem has been simplified and written as algorithms then it can be implemented and turned into a program.
-
-## Algorithms Are Syntax Independent
-
-We do not need to comply to any programming language specifications, We  can use a combination of mathematics notation and plain English.
-
-## Programs Are Syntax Dependent
-
-On the other hand, since we write the programs in the implementation stage then we use a programing language.
-
-Each programing language has its own syntax, think of “syntax” as grammar.  The interpreter and compiler will not understand you as you are breaking the syntax/grammar rules.
-
-## Algorithms Are Hardware Independent
-
-We can write algorithms anywhere even on a whiteboard, hence you have  whiteboard challenges at technical interviews. We do not need any  specific hardware for this.
-
-Programs on the other hand are written on IDE’s and are dependent on hardware to be executable.
-
-## Programs Are Hardware Dependent
-
-As we are already in the implementation phase, then we need to talk to the machines to automate our business problem.
-
-9/10 times humans can do these business tasks, perfect example is a  recommender system. We have been recommending items to our fellow humans for decades now.
-
-With this said machines do it better than us, as they are serial learners.  While we are sleeping they are learning, while we are having fun we are  sleeping, while we eating they are learning.
-
-Point proven, machines are far more effective. Machines are simply put  electronic hardware, we communicate with these using syntax.
-
-# Algorithms Are Analyzed
-
-In computer science, we have what we call space and time complexity. This is an analysis of an algorithm.
-
-How fast will our algorithm take to solve a problem and how much memory will it take.
-
-# Programs Are Not Analyzed
-
-In the implementation stage we will just need to test our program, we have already analyzed the program as an algorithm.
-
-# Properties Of An Algorithm
-
-## Most Algorithms Need To Take In An Output
-
-A problem could be structured as;
-
-Write an algorithm to reverse a string. In this case our input is that string we need to reverse.
-
-We have the string; “ Thenjiwe” and we want to reverse it to “ewijneht”. Then the string “Thenjiwe” is our input.
-
-## Algorithms Need To Produce An Output
-
-Referring to the problem above, our input is “Thenjiwe” . Our Algorithm is  supposed to reverse this string and maybe lowercase everything. Then our output will be “ewijneht”.
-
-## Algorithms Need To Be Clear
-
-We need to know from the beginning which problems are we solving. Are we  reversing characters, checking for repeating characters, finding the  shortest path to a location etc.
-
-## Algorithms Need To End At Some Point
-
-They have a start and end point. Then will start at a specific instruction  and end at a specific instruction. The duration of an algorithm must be  finite.
-
-## Algorithms Need To Be Effective
-
-Your Algorithm does not need to be fancy and have multiple statements that will not be used in the programing stage.
-
-# Additional Reading
-
-1. http://www.edu4java.com/en/concepts/what-is-a-program-an-algorithm.html
-2. [https://www.investopedia.com/terms/a/algorithm.asp#:~:text=An%20algorithm%20is%20a%20set,preparing%20a%20dish%20or%20meal](https://www.investopedia.com/terms/a/algorithm.asp#:~:text=An algorithm is a set,preparing a dish or meal).', N'This is one of multiple articles that will be covering algorithms in detail. Developers struggle with these and I want to simplify them as much as possible, from basic to complex.
-', 1633964311139, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'FE1E433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634187534606, N'6882433E-F36B-1410-893A-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'220B433E-F36B-1410-8935-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://blog.logrocket.com/wp-content/uploads/2021/10/using-appstate-in-react-native.png', N'Using AppState in React Native to improve performance', N'Knowing the current state of an app is crucial for a variety of  reasons, most notably memory management. Constant updates to an app’s  state can consume a lot of energy, and sometimes it’s better to pause  them when the user is not interacting with the app.
-
-This is where the React Native AppState API comes in. AppState tells  you when an app is inactive or in the background so you can stop  nonessential processes, save memory, and improve the performance of your React Native app.
-
-In this tutorial, we’ll introduce you to AppState and demonstrate how it works by walking through a simple example.
-
-## What is AppState in React Native?
-
-In React Native, [AppState](https://reactnative.dev/docs/appstate) represents the current state of the app — i.e., whether the app is in the foreground or background.
-
-AppState is useful for collecting data on app usage — for example,  the time a user spends in the app before putting it in the background or closing the app. Analyzing this data helps you understand the way users interact with your app so you can make changes if necessary to boost  engagement.
-
-There are countless SDKs designed to help you generate this type of  insight, but AppState enables you to monitor state changes on your own  without relying on any third-party tools.
-
-## What is AppState used for?
-
-As stated above, AppState is most commonly used for memory management and user status management. Let’s dive deeper and see how it figures  into these important tasks.
-
-### Memory management
-
-AppState can help you avoid unnecessary state changes when the user is not interacting with an app.
-
-It’s a good practice to create an `isMounted` property that changes according to the state of the app. If we take class components into consideration, `isMounted` is set to `true` once the `componentDidMount` is fired and `false` when `componentWillUnmount` is fired.
-
-You can use the `isMounted` property of `this` throughout the components to only call `this.setState` if the component is mounted.
-
-[ ](https://blog.logrocket.com/using-appstate-react-native-improve-performance/)
-
-```javascript
-this.isMounted && this.setState(...)
-```
-
-You can use AppState’s functionality to limit the state updates  accordingly — e.g., to pause them when the app is in background or  inactive (in iOS) and resume when the user returns to the app.
-
-### User status management
-
-When it comes to analytics, AppState enables you to update the  database on user interactions — e.g., when the user returns to the app  or puts it in background, this data tells you how the user is  interacting with your app.
-
-AppState can also help you determine whether the user is online or  offline, which is particularly important for chat applications. You  might have seen the “online” and “last seen at…” in WhatsApp, Telegram,  and other applications that provide a chat feature.
-
-You can easily update the user status according to the change in the  AppState — e.g., online when the user is interacting with the app, when  the app is currently active, or when the app is in the foreground, and  offline when the user puts the app in the background or closes it.
-
-## How to use AppState in React Native
-
-To see AppState in action, we’ll create a React Native chat  application that shows the online status of the user. We’ll use AppState to indicate when the user is online when the app is open or in the  foreground and when the app is in the background or closed.
-
-AppState is the part of the `react-native` library and can be easily imported using the following code:
-
-```javascript
-import {AppState} from ''react-native'';
-```
-
-Now you’re ready to use AppState and its listeners in your app.
-
-The most basic use case for AppState is to get the state of the app using the `currentState` property:
-
-```javascript
-AppState.currentState
-```
-
-We can get two states from the above property: `active` and `background`.
-
-- `active` means the app is currently running and is in foreground
-- `background` means the app is running but is currently in background — i.e., the user is either on another app or viewing their home screen
-
-The above states are given on both Android and iOS, but iOS supports an additional AppState called `inactive`, which occurs when the user transitions between two apps, opens the Notification Center, or receives an incoming call.
-
-## Listening for changes in AppState
-
-AppState comes with the listeners for the changes in the state. The `change` listener is supported on both Android and iOS.
-
-To add a new listener, enter the following:
-
-```javascript
-AppState.addEventListener
-```
-
-Then add the `change` event listener to update the app according to the changes:
-
-```javascript
-const appStateListener = AppState.addEventListener(
-  ''change'',
-  nextAppState => {
-    console.log(''Next AppState is: '', nextAppState);
-    setAppState(nextAppState);
-  },
-);
-```
-
-It’s always a good practice to clean up the listeners for the sake of performance. To clean the AppState listener, simply use the `remove` method:
-
-```javascript
-appStateListener.remove()
-```
-
-Below is the full code for our example:
-
-```javascript
-import React, {useEffect, useState} from ''react'';
-import {View, StyleSheet, Text, AppState} from ''react-native'';
-
-const App = () => {
-  const [aState, setAppState] = useState(AppState.currentState);
-  useEffect(() => {
-    const appStateListener = AppState.addEventListener(
-      ''change'',
-      nextAppState => {
-        console.log(''Next AppState is: '', nextAppState);
-        setAppState(nextAppState);
-      },
-    );
-    return () => {
-      appStateListener?.remove();
-    };
-  }, []);
-  return (
-    <View style={styles.container}>
-      <Text style={styles.txt}>
-        Current App State is: <Text style={styles.aState}>{aState}</Text>
-      </Text>
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: ''center'',
-    justifyContent: ''center'',
-    backgroundColor: ''#000'',
-  },
-  txt: {
-    color: ''#d9d9d9'',
-    fontSize: 18,
-  },
-  aState: {
-    color: ''#fff'',
-  },
-});
-export default App;
-```
-
-There are two more Android-specific listeners you can use:
-
-- `focus` for when a user interacts with an app
-- `blur` for when the user pulls down the Notification Center
-
-Here’s the final result:
-
-Video Player
-
-<video class="wp-video-shortcode" id="video-71101-1_html5" preload="metadata" style="width: 730px; height: 628.337px;" src="https://blog.logrocket.com/wp-content/uploads/2021/10/Screen-Recording-2021-10-06-at-11.37.56-PM.mp4?_=1" width="730" height="1780"></video>
-
-00:00
-
-00:15
-
-## Conclusion
-
-Now you have a basic understanding of the AppState tool and how to  use it in a React Native app. You can use it to change the user status  in an app (from online to offline or vice versa), to collect analytics  on app usage, and play or pause the AV content in your app, depending on the type of project you’re working on.
-
-Thanks for reading!', N'In this tutorial, we’ll introduce you to AppState and demonstrate how it works by walking through a simple example.', 1633965382619, N'2C1F433E-F36B-1410-8934-008CAF34AFE2', N'1F0B433E-F36B-1410-8935-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634553197774, N'6F82433E-F36B-1410-893A-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'650B433E-F36B-1410-8935-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://www.chrisatmachine.com/static/06b6d6d987cc35202b44b0e872bcf592/509ce/sdkman.png', N'Install Multiple Versions of Java with SDKMAN', N'
-
-## What is SDKMAN?
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'B530433E-F36B-1410-894F-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fsdkman.png?alt=media&token=c25e52bc-9e87-4472-a50b-b9d719505b63', N'Install Multiple Versions of Java with SDKMAN', N'## What is SDKMAN?
 
 ------
 
@@ -580,186 +169,43 @@ sdkman_auto_env=true|false
 
 ---
 
-[SDKMAN!](https://sdkman.io/)', N'SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits. This is very useful for managing Java versions as well as Gradle, Maven etc..', 1633966843561, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'600B433E-F36B-1410-8935-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634197744470, N'7582433E-F36B-1410-893A-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'A646433E-F36B-1410-8937-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://www.dataquest.io/wp-content/uploads/2019/07/learn-python-tutorials.jpg', N'These 17 Projects Will Teach You Python Way Better Than ''Hello World''', N'I’ve made no secret of the fact that I love Python, and that I believe one  of the best ways to learn Python is by finding an awesome project you  care about to work on. There’s nothing more stimulating than passion and curiosity, and that makes the best projects for Python beginners  usually something a little grittier than the standard tutorials.
-
-While it’s fine to start with “Hello World”, it’s not exactly the most fascinating of projects and won’t keep you  going when the going gets tough. It didn’t work for me — I had to get my hands dirty with a specific project involving the Instagram API. But  that helped me learn Python way more than running `2+2` .
-
-You might be sold on the concept of using a project to learn Python, but  maybe you’re wondering how you can find the best Python projects for  beginners. The good news is that thanks to the awesome community of  Pythonistas out there, the prevalence of open source code and data, and  the wide world of the internet, you’re bound to find a Python project  for beginners that you’ll love.
-
-Full disclosure, some of these will be harder than your usual Python  projects for beginners. On the upside, these are fun, interesting  projects that will actually teach you Python. You will struggle, you  will have to Google stuff, but that’s all part of the experience. Here  are 17 ideas to get you started.
-
-[TOC]
-
-# 5 Python Projects for Beginners Using Straight Python or Python Packages
-
-These Python projects for beginners come straight from the source: they use  vanilla Python, or they use some really cool Python packages. These  Python projects for beginners will be loaded with helpful docs,  commentary, and experiences of other Python beginners who have tried and loved these projects.
-
-## [1. Make a Twitter bot with `Tweepy`](https://realpython.com/twitter-bot-python-tweepy/)
-
-Obsessed with social media? Me, too. I follow several bots (like [this hilarious one](https://twitter.com/kauIhiIoshudon) based on a great book I read) and always wondered how to make one.
-
-While [this tutorial](https://realpython.com/twitter-bot-python-tweepy/) sounds advanced for a Python beginner, it’s also something that lets  you indulge in your passion a little bit, and maybe your sense of humor  too. This tutorial will walk you through 5 steps: installing the  “Tweepy” package, signing up as a Twitter developer to use its API,  using Tweepy to invoke the Twitter API, building Twitter bots, and  deploying the bots to a server using Docker and AWS.
-
-Yes, it’s a lot of work! But it’ll be fun, it’ll teach you a lot of skills,  and be interesting enough to keep you going through the sticky patches.
-
-## [2. Write a Create Your Own Adventure script](https://coding-grace-guide.readthedocs.io/en/latest/guide/lessonplans/beginners-python-text-based-adventure.html)
-
-I used to love these books when I was a kid, and I was really excited to learn that you can create your own using Python! [This tutorial](https://coding-grace-guide.readthedocs.io/en/latest/guide/lessonplans/beginners-python-text-based-adventure.html) is great because it runs through every single step you’ll need and explains a lot of the background code you’ll be using.
-
-It’s also great because in the end, you’ll have created something by  yourself with your own hands, that you really love. It’s something you  can share with friends, with family, with strangers on the internet. Let your creativity take over and use these Python projects for beginners  to learn the basics.
-
-## [3. Create a blog](https://djangocentral.com/building-a-blog-application-with-django/)
-
-Hey, you’re reading this on a blog! Guess what? You can make a blog using a combination of Python and Django.
-
-[This tutorial](https://djangocentral.com/building-a-blog-application-with-django/) will teach you how to build a blog application with Django that lets  users create, edit and delete posts. You’ll have a home page that lists  all your blog posts, and a dedicated detail page for each individual  post.
-
-This uses a common Python framework called Django. Django is an open-source  web framework written in Python. A framework is just basically a  shortcut. You could do this in pure Python, but Django will make it a  lot easier. Again, this tutorial is really good because it doesn’t just  give vague instructions — it gives you the full step-by-step walkthrough to setting up your environment, talking about database models, and  actually creating the blog.
-
-This project is perfect if you have something to say and need a place to say it. As a bonus, you can use your Python-built blog to impress potential employers and land your dream Python job.
-
-## 4. Make a login system, [Part 1](https://www.youtube.com/watch?v=RHu3mQodroM) and [Part 2](https://www.youtube.com/watch?v=SUC1aTu092w&t=0s)
-
-This Python project for beginners is great for anybody who wants to be a  future web developer. Every good website needs a login system, and the  great news is you can do that with Python. This option is less of a  passion project and more of a practical project but it will teach you a  lot of skills you need and the outcome is an interactive system that  really works.
-
-Rather than a written tutorial, you should watch these two YouTube videos to  learn how to make a login system. They walk you through both the  practical steps of what code you’re going to need, as well as the more  theoretical steps explaining the concepts behind what you’re making.
-
-[Part one](https://www.youtube.com/watch?v=RHu3mQodroM) is about 25 minutes long, while [part two](https://www.youtube.com/watch?v=SUC1aTu092w&t=0s) is 32 minutes long.
-
-## [5. Connect Python to StackOverflow](https://pypi.org/project/howdoi/)
-
-Think of this option as less of a project for Python beginners, and more of  something I think should be a requirement for every Python user ever.
-
-Something I’ve learned about coding is that it’s rare that you are typing  frantically at your keyboard and writing lines of code that magically  fill your screen. Instead, it looks a little bit more like copying  scrappy code from all around the internet and Googling it on  StackOverflow when it doesn’t do what it’s supposed to.
-
-That’s why I love [this tutorial](https://pypi.org/project/howdoi/) which is based on a package called `howdoi`. When properly set up, it gives you instant coding answers from the  command line. Ideally, this means you won’t have to open your browser to look for help. If you’re extra ambitious once you set this up, you can  go a step further and create a GUI or a flask web app that wraps the `howdoi` package.
-
-Once you acknowledge how much time you spend Googling things, you’ll realize the value of using this as a Python project for beginners.
-
-# 4 Python Projects for Beginners Using Courses or Lectures
-
-While some of the best Python beginner projects are based on straight Python  or use a couple of Python packages, you can also use courses as a way to do a more interactive, guided project. These options are billed as  courses that teach you Python, but optionally can be used to complete  your first Python project.
-
-## [6. Complete a Python Course](https://qvault.io/learn-python-course/)
-
-There are tons of courses online to learn Python, but I like [this one](https://qvault.io/learn-python-course/) because you build the components of a real-life application — a movie review app.
-
-Beyond that one project, the course itself has plenty of interactive coding  challenges that kind of act as mini-projects. They will stretch your  limits, but they’re great for a beginner who wants to learn Python.
-
-## [7. Coursera’s Python Project option](https://www.coursera.org/learn/python-project-for-data-science)
-
-Coursera is normally what I recommend to people who want to secure a certificate for their Python experience, and not necessarily as a source of Python  projects for beginners. However, it also is replete with courses that  either act as a project or let you select a project yourself.
-
-For example, [this Python project](https://www.coursera.org/learn/python-project-for-data-science) for data science is intended for you to demonstrate foundational Python skills for working with data. It has a bunch of lectures, but you’ll  also be doing a hands-on project developing a simple dashboard using  Python.
-
-## [8. YouTube lectures](https://www.youtube.com/watch?v=MrBzgvUNr4w&list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU&index=5)
-
-Have you ever wanted to make a neural network that makes images become  really trippy using Python and Tensorflow, mimicking the effects of  hallucinogenic drugs? Well, who wouldn’t? And now you can learn how with [this YouTube lecture/tutorial](https://www.youtube.com/watch?v=MrBzgvUNr4w&list=PL2-dafEMk2A6QKz1mrk1uIGfHkC1zZ6UU&index=6).
-
-Siraj is an awesome tutor due to his energy and clear experience. He has a  whole series of tutorials that make up his “Learn Python for Data  Science” course. He links to the source code in all his videos, so you  can try this out for yourself.
-
-If you’re not a fan of this particular Python project for beginners, you  can check out his other videos to see if there’s a project that does  grab your attention.
-
-## [9. LinkedIn Learning](https://www.linkedin.com/learning/python-projects)
-
-It surprised me to learn this as well, but it turns out LinkedIn is more  than just a place for CEOs to make grandstanding claims about how cool  their company is.
-
-There’s actually a pretty complete product called LinkedIn learning full of courses about just about anything. [One of those courses](https://www.linkedin.com/learning/python-projects) is called Python Projects. In it, there are four potential Python  projects for beginners you can try — my favorite would be creating a GUI weather application with Tkinter.
-
-Again, like Coursera, it’s not free but you can start for free with their  month-long free trial. If you love it, it costs $20 a month to continue.
-
-# 3 Python Projects for Beginners Using GitHub
-
-Ah, GitHub, one of my favorite places on the internet. GitHub is an awesome resource for a ton of reasons: first, it’s free! Second, for a language like Python, there is a robust and friendly community full of  Pythonistas who have created projects, tutorials, articles, open-source  code, etc, that they are so excited to share with you.
-
-As you can imagine, that makes it a great place to find some awesome  Python project ideas for beginners. These are my favorite three —  definitely more simple beginner Python projects than others on this list — but feel free to explore for yourself and discover your own.
-
-## [10. Matchmaker game](https://github.com/ndleah/python-mini-project/tree/main/Matchmaker)
-
-[This tutorial](https://github.com/ndleah/python-mini-project/tree/main/Matchmaker) is billed as a mini-project, and that’s absolutely the reality. All you need to do to run this game is open a terminal in the folder where your script is located and run the following command:
-
-```
-Python Matchmaker.py
-```
-
-That’s it, it’s up and running! What I love about this Python project for  beginners is that it teaches you the basics, and it lets you see the  power of Python. I consider it to be a little bit better than the Hello  World example at getting Python beginners invested in learning Python.
-
-## [11. Madlibs](https://github.com/ShrutiSolani/python-mini-project/tree/main/Madlibs)
-
-Who didn’t love Mad Libs as a kid? [This tutorial](https://github.com/ShrutiSolani/python-mini-project/tree/main/Madlibs) is another really simple mini-project that will help you get to terms  with a lot of the basic Python environment elements and is just a fun  way to see how cool Python can be.
-
-All you need to do is install the random module and then head over to the  directory where your Python file is saved and run the following command: `Python madlibs.py`
-
-## [12. Count Instagram followers and likes](https://github.com/ankitdobhal/Awesome-Python-Scripts/blob/master/Web-Scraping/Instagram/instagram_count.py)
-
-[This project](https://github.com/ankitdobhal/Awesome-Python-Scripts/blob/master/Web-Scraping/Instagram/instagram_count.py) is for another one of the social media addicts out there like me. It’s a script that counts the number of followings, followers, and posts of  any account. It takes the username from the terminal and shows you the  output.
-
-I like this tutorial because you can do what you want with it. If you  want to just run it, run it! But you can also look into the more complex script and try to figure out what’s going on. Take what you want from  this learning experience.
-
-# 5 Python Projects for Beginners Using Your Own Data
-
-What is a project, but just a question that needs data to answer it? If none of the above 12 Python projects for beginners interest you, the good  news is that there’s literally an unlimited number of projects available for you. All you need is a pinch of creativity and a burning passion to know more.
-
-With the state of the internet today, you can really easily find data from  pretty much any source that interests you and create your very own  project. It’ll be harder than the options above because there are no  guardrails, but it’s also liable to be more satisfying when you finally  find your answer.
-
-Here are five great sources of internet data you can use to create your very own basic Python project for beginners. Consider these simple Python  projects just a place to start.
-
-## [13. 538](https://data.fivethirtyeight.com/)
-
-Nate Silver gets regularly dunked on these days, but the good news is his  website 538 is still a really cool place to find easy beginner Python  projects. Just check out [this website](https://data.fivethirtyeight.com/) and scroll down the list to see if there’s anything that’s interesting to you.
-
-It’s constantly updating, so right now I’m looking at club soccer  predictions, MLB predictions, political predictions, and more. Have a  look for yourself and see what you want to dive into. See how 538 ran  their analyses, and do your own alongside.
-
-## [14. Tidy Tuesday](https://github.com/rfordatascience/tidytuesday)
-
-This is slightly cheeky because these programming projects are originally  intended to be for R rather than Python. But they’re both great  languages for data science. The [Tidy Tuesday GitHub repo](https://github.com/rfordatascience/tidytuesday) has new data every single Tuesday as well as some interesting ideas for beginner projects with Python and visualization ideas that you can  borrow.
-
-Examples from the past few weeks include transit costs, art collections, the  Kenya census, wealth and income, and a lot more. Let yourself be  inspired by the data or even the projects that other people are doing  around that data.
-
-## [15. Buzzfeed](https://github.com/BuzzFeedNews)
-
-Yep, I know, they do more than quizzes! [Their GitHub repo](https://github.com/BuzzFeedNews) is another fantastic source of open source data, analyses, libraries,  tools and guides. Have a look, see what interests you, and start  analyzing!
-
-They look at H2 Visa certification data, firearm background checks, political donations, nursing home data, and more.
-
-## [16. NASA](https://pds.nasa.gov/datasearch/data-search/)
-
-Space represents one of the greatest mysteries of our time. If you ever  dreamed of being an astronaut, like me, this might be the place for you  to investigate data. The planetary data system run by NASA Offers data  based on tons of different targets that you can choose, including  comets, asteroids, all the planets, and even solar wind.
-
-[This potential project](https://pds.nasa.gov/datasearch/data-search/) might be a challenge for Python beginners, but if this is the kind of data that interests you, it’ll be worth it.
-
-## [17. AWS](https://github.com/awslabs/open-data-registry/)
-
-It shouldn’t be a surprise to anybody that AWS has an [absolutely enormous registry of open data](https://registry.opendata.aws/). They have data sets from the Allen Institute for AI, Digital Earth  Africa, Facebook data for good, more stuff from NASA, and even an Amazon sustainability data initiative.
-
-Naturally, AWS doesn’t own this data — they just host it for a variety of  government organizations, researchers, businesses, and individuals that  have chosen to make this open. Their GitHub repo also contains a few  examples of how to use the data.
-
-Have a browse, poke around, and find what looks interesting to you.
-
-# The best Python projects for beginners are deeply, deeply interesting.
-
-I reject the idea that Python programming projects for beginners have to  be easy. Instead, I think it’s much more important that the projects be  fascinating, gritty, challenging, and rewarding. This list of Python  project topics for beginners will probably push you to your limits, will make you angrily smash your keyboard, and might even cause you to  struggle.
-
-But in the end, you will have completed a much more rewarding project than  just a simple project in Python, like running hello world or any of the  other bog-standard tutorials.
-
-By no means consider this list of coding ideas for Python exhaustive.  There’s more data than this world knows what to do with — the only  limitation here is your imagination. Find something you care about, find the data to back it up, and learn Python to solve that problem. That’s  always going to be the best Python project for a beginner like you.', N'These projects are fascinating, rewarding, and maybe a little challenging', 1634029301681, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'F71E433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1634030128908, N'7782433E-F36B-1410-893A-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'0207433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'title 05 ne', N'cotent 05 ne', N'Title 05 ne', 1634196024755, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'1F0B433E-F36B-1410-8935-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634200776510, N'0007433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'0407433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'asdasd', N'asdasdasdasd', N'asdasdasd', 1634200236291, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'0C1F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634200615279, N'0307433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'0807433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'asdasd', N'asdasdasdasd', N'asdasdasd', 1634200244901, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'0C1F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634200712426, N'0607433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'1007433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'asdasd', N'asdasd', N'asdasdasd', N'asdasd', 1634200380728, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634200562055, N'0C07433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'1407433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'asdasd', N'asdasd', N'asdasdasd', N'asdasd', 1634200388292, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634200743593, N'1207433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'1E07433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'asdasd', N'asdasd', N'asdasdasd', N'asdasd', 1634200388458, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634200733418, N'1907433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'2807433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'asdasd', N'asdasd', N'asdasdasd', N'asdasd', 1634200388584, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634200722182, N'2307433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'2A07433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'asdasd', N'asdasd', N'asdasdasd', N'asdasd', 1634200418325, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634200755726, N'2907433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'3C07433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://www.dataquest.io/wp-content/uploads/2019/07/learn-python-tutorials.jpg', N'These 17 Projects Will Teach You Python Way Worse Than ''Hello World''', N'Hehe đã bị Update rồi :)))', N'These projects are fascinating, rewarding, and maybe a little challenging', 1634201981394, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'F71E433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'7782433E-F36B-1410-893A-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'4207433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'title 06', N'asdasdasd', N'asdasd', 1634217999907, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'FE1E433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'3F07433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'4C07433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'123', N'123', N'123123', N'123', 1634218694750, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'FE1E433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'4707433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'5007433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'123', N'123', N'123123', N'123', 1634218721898, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'FE1E433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'4E07433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'5607433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'Title test 08', N'asdasdads', N'asdasd', 1634218912466, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'5307433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'5E07433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'title 11', N'asdasdasd', N'asdasd', 1634219406735, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'0C1F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'5A07433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'6807433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'title12', N'123123123', N'123123123', 1634219470760, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'0C1F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'6607433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'6C07433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://editor.analyticsvidhya.com/uploads/50594Moby-logo.png', N'A Complete Guide on Docker for Beginners', N'***\*This article was published as a part of the [Data Science Blogathon](https://datahack.analyticsvidhya.com/contest/data-science-blogathon-12/)\****
+[SDKMAN!](https://sdkman.io/)', N'SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits. This is very useful for managing Java versions as well as Gradle, Maven etc..', 1635404366482, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'C46F433E-F36B-1410-8345-00D1D56254E8', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1635404493066, N'B230433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'D730433E-F36B-1410-894F-008CAF34AFE2', N'3095433E-F36B-1410-894D-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FdatAntibonk.png?alt=media&token=6c462ff7-5795-4a9f-80e4-6fa748edec84', N'How you can Go Pro in ReactJS and Tailwind CSS', N'Open the ./src/index.css file that Create React App generates for you by default and use the @tailwind directive to include Tailwind’s base, components, and utilities styles, replacing the original file contents:
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Tailwind will swap these directives out at build-time with all of the styles it generates based on your configured design system.
+
+Read our documentation on adding base styles, extracting components, and adding new utilities for best practices on extending Tailwind with your own custom CSS.
+
+Finally, ensure your CSS file is being imported in your ./src/index.js file:
+
+  // src/index.js
+  import React from ''react'';
+  import ReactDOM from ''react-dom'';
+ import ''./index.css'';
+  import App from ''./App'';
+  import reportWebVitals from ''./reportWebVitals'';
+
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById(''root'')
+  );
+
+  // ...
+You’re finished! Now when you run npm run start, Tailwind CSS will be ready to use in your Create React App project.', N'Start by creating a new Create React App project if you don’t have one set up already. The most common approach is to use Create React App:', 1635404408878, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'AF6F433E-F36B-1410-8345-00D1D56254E8', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1635404479077, N'D530433E-F36B-1410-894F-008CAF34AFE2', 4.333333333333333);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'F730433E-F36B-1410-894F-008CAF34AFE2', N'EFF3423E-F36B-1410-894A-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fdownload.jpg?alt=media&token=fb3fd99f-bc40-4a5f-9174-6152eb83310c', N'ASP.NET', N'.NET is a free, cross-platform, open source developer platform for building many different types of applications.
+With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, and IoT
+C# is a simple, modern, object-oriented, and type-safe programming language.
+F# is a programming language that makes it easy to write succinct, robust, and performant code.
+Visual Basic is an approachable language with a simple syntax for building type-safe, object-oriented apps.', N'About .NET and C# fraemework', 1635404424260, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'CB6F433E-F36B-1410-8345-00D1D56254E8', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1635404506927, N'F630433E-F36B-1410-894F-008CAF34AFE2', 3.6666666666666665);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'FF30433E-F36B-1410-894F-008CAF34AFE2', N'AF30433E-F36B-1410-894F-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FOIP.jpg?alt=media&token=95f15a56-f831-4705-84cf-8e2c91159ad3', N'Docker ', N'### Docker 
+Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment. Containers simplify delivery of distributed applications, and have become increasingly popular as organizations shift to cloud-native development and hybrid multicloud environments.', N'Testing post docker blog ', 1635404506367, N'6407433E-F36B-1410-893B-008CAF34AFE2', N'FC6E433E-F36B-1410-8345-00D1D56254E8', null, 0, N'FB30433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'0731433E-F36B-1410-894F-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2F50594Moby-logo.png?alt=media&token=78ce9b9a-a2e1-401a-a11c-96d9a891bb11', N'A Complete Guide on Docker for Beginners', N'***\*This article was published as a part of the [Data Science Blogathon](https://datahack.analyticsvidhya.com/contest/data-science-blogathon-12/)\****
 
 ## Introduction
 
@@ -1169,71 +615,1387 @@ I hope you find this article helpful. Please feel free to share it. Thank you, h
 
 - Image 1: https://hub.docker.com/
 - Image 2: www.docker.com
-- Image 3: https://docs.docker.com/v17.12/engine/docker-overview', N'It is not difficult to create a machine learning model that operates on our computers.', 1634226552867, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'600B433E-F36B-1410-8935-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1634228568962, N'6A07433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'7007433E-F36B-1410-893B-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://editor.analyticsvidhya.com/uploads/50594Moby-logo.png', N'Docker for Beginners', N'Hehe đã bị Update rồi :)))', N'It is not difficult to create a machine learning model that operates on our computers.', 1634228771524, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'600B433E-F36B-1410-8935-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1634230216473, N'6A07433E-F36B-1410-893B-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'3690433E-F36B-1410-893C-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://coquynhielts.edu.vn/wp-content/uploads/2019/02/technology1.jpg', N'Technology and How to use', N'asdasdasdasd', N'asdasdasd', 1634284084937, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'3490433E-F36B-1410-893C-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'3C90433E-F36B-1410-893C-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'Test12', N'asdasdasd', N'adsasdasd', 1634290756226, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'3990433E-F36B-1410-893C-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'4490433E-F36B-1410-893C-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'test13', N'asdasdasd', N'asdasdasd', 1634290875952, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'131F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1634637679768, N'4090433E-F36B-1410-893C-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'4A90433E-F36B-1410-893C-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'title13', N'asdasdasd', N'adsasdasd', 1634300514465, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'4790433E-F36B-1410-893C-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'5290433E-F36B-1410-893C-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'', N'test 15', N'asdasdasd', N'asdasdasd', 1634300570020, N'9C46433E-F36B-1410-8937-008CAF34AFE2', N'0C1F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'4E90433E-F36B-1410-893C-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'B303433E-F36B-1410-893E-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'Title test 08 nham test viec update', N'asdasdads', N'Description nay de test update', 1634363981052, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'B203433E-F36B-1410-893E-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'BF4C433E-F36B-1410-8942-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', null, N'C Programming Basics – C Language Tutorial For Beginners', N'C is a high level, general purpose programming language initially  developed by Dennis Ritchie in 1972 for the Unix operating system. The  Unix operating system and most Unix applications are written in C and  today is still one of the most widely used programming languages around. In fact C is so popular that most modern languages have either directly or indirectly borrowed from C in one way or another. Languages based on C or C syntax include Java, JavaScript, C#, Objective-C, PHP and  Python. Learning to program in C can therefore serve as a great base for learning other programming languages. If you would like to learn the  basics of C, then sign up for the [C Programming For Beginners](https://www.udemy.com/course/c-programming-for-beginners/?tc=blog.cprogrammingbasics&couponCode=half-off-for-blog) course. This course is designed to teach beginners how to program in C  as well as teaching students who are familiar with languages line Java,  Ruby or Python. The course includes lessons on the fundamentals of  programming and how to program on both Mac and Windows. The course  includes the details of C and includes advanced topics like memory  allocation, the stack and heap and binary file IO.
+- Image 3: https://docs.docker.com/v17.12/engine/docker-overview', N'It is not difficult to create a machine learning model that operates on our computers.', 1635404535001, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'B26F433E-F36B-1410-8345-00D1D56254E8', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1635404771089, N'0531433E-F36B-1410-894F-008CAF34AFE2', 5);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'4731433E-F36B-1410-894F-008CAF34AFE2', N'EFF3423E-F36B-1410-894A-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FJava_programming_language_logo.svg.png?alt=media&token=0088b1f4-e5c2-4264-b754-6cf820c9b72f', N'About java language', N'Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),[17] meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.[18] Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. As of 2019, Java was one of the most popular programming languages in use according to GitHub,[19][20] particularly for client-server web applications, with a reported 9 million developers.[21]
+
+Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle) and released in 1995 as a core component of Sun Microsystems'' Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun had relicensed most of its Java technologies under the GPL-2.0-only license. Oracle offers its own HotSpot Java Virtual Machine, however the official reference implementation is the OpenJDK JVM which is free open-source software and used by most developers and is the default JVM for almost all Linux distributions.', N'Java programing language ', 1635404609037, N'371F433E-F36B-1410-8934-008CAF34AFE2', N'C46F433E-F36B-1410-8345-00D1D56254E8', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1635404855200, N'4331433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'4931433E-F36B-1410-894F-008CAF34AFE2', N'AF30433E-F36B-1410-894F-008CAF34AFE2', null, N'Docker ver 2', N'### Docker 
+Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment. Containers simplify delivery of distributed applications, and have become increasingly popular as organizations shift to cloud-native development and hybrid multicloud environments.', N'Testing post docker blog ', 1635404627117, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'FC6E433E-F36B-1410-8345-00D1D56254E8', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1635405384815, N'FB30433E-F36B-1410-894F-008CAF34AFE2', 2.5);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'4B31433E-F36B-1410-894F-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FR.jpeg?alt=media&token=5b494866-b884-4c45-9cba-28d20fad3bf2', N'REST Architecture Style', N'## REST
+
+REST là một tập các nguyên lí, ràng buộc về architectural style, không phải là protocol hay standard, vậy nên ta có thể implements nó theo rất nhiều cách khác nhau. REST được đề ra bởi Dr. Roy Fielding trong [Luận văn tiến sĩ](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) của mình vào năm 2000.
+
+REST API hay RESTful API là Web service được thiết kế theo nguyên lí REST.
+
+### REST principles
+
+1. **Uniform Interface**
+    
+    ![https://www.ics.uci.edu/~fielding/pubs/dissertation/uniform_ccss.gif](https://www.ics.uci.edu/~fielding/pubs/dissertation/uniform_ccss.gif)
+    
+    Đây là điểm làm nên sự khác biệt giữa REST và các architectural style trước đó. REST đưa ra một Interface thống nhất, và tách biệt hoàn toàn với phía client. Việc này giúp tăng tính tương tác giữa các clients và servers do API được thiết kế độc lập với client, đưa ra những phương thức chung, chuẩn hóa cho client có thể sử dụng tùy biến. Nhưng đánh đổi lại là tính hiệu quả bị giảm, vì dữ liệu được truyền đi ở dạng chuẩn chung, chứ không phải dạng cụ thế riêng cho từng nhu cầu của client.
+    
+    Để đạt được Uniform Interface, REST đưa ra 4 constraints sau:
+    
+    - Identification of resources:
+        
+        Resource là một thông tin trừ tượng (ví dụ: document, image, service, object, tập các object,...) trong REST. Hay nói cách khác, resource là 1 conceptual mapping tới 1 phần, hoặc 1 nhóm các entities trong Database.
+        
+        REST sử dụng resource identifier (tên của resource) để tương tác với resource đó, và đương nhiên là ta nên đặt tên resource theo conventions để client dễ dàng tương tác.
+        
+    - Manipulation of resources through representations:
+        
+        Mỗi resource cần có khuôn (representations) chứa thông tin mô tả resource đó để thống nhất thứ cần gửi qua lại giữa server và client.
+        
+    - Self-descriptive messages:
+        
+        Mỗi resource representation nên chứa thêm thông tin về cách xữ lí message truyền resource đó.
+        
+        Nếu chúng ta sử dụng HTTP để implements REST API, Self-descriptive messages có thể được bao gồm trong header của message
+        
+    - Hypermedia as the engine of application state:
+        
+        Mọi resources có thể tương tác thông qua hyperlinks.
+        
+    
+    (Khi xem demo, cách đặt tên các endpoint, thì ta sẽ hiểu rõ hơn về nguyên lí này)
+    
+2. **Client-server**
+    
+    ![https://www.ics.uci.edu/~fielding/pubs/dissertation/client_server_style.gif](https://www.ics.uci.edu/~fielding/pubs/dissertation/client_server_style.gif)
+    
+    [Client-server](https://www.ics.uci.edu/~fielding/pubs/dissertation/net_arch_styles.htm#sec_3_4_1) là một architectural style đưa ra rằng ta phân biệt rõ ra phần User Interface và phần Xữ lí, lưu trữ dữ liệu (như trong hình là client và server). Nhờ đó giúp đơn giản hóa phía Server, và dễ dàng mở rộng phía client (web app, desktop app, mobile app,..) vì cùng dùng chung 1 server.
+    
+    Ta thấy được việc thiết kế Interface tốt, chuẩn hóa sẽ giúp chúng ta phát triển cả client và server mà không sợ việc không tính tương thích.
+    
+3. **Stateless**
+    
+    Server không chứa bất kì dữ liệu về các request trước của client, không cần phải sử dụng session. Như vậy sẽ giảm tải cho server rất nhiều khi mà lượng người dùng lớn cùng truy cập vào server.
+    
+    Vậy để làm được ứng dụng stateful cho người dùng cuối, client cần gửi tất cả những thông tin cần thiết trông request để server xữ lí, bao gồm luôn cả thông tin để xác thực phân quyền.
+    
+4. **Cacheable**
+    
+    Để giảm tải đường truyền mạng, giảm lượng requests cho server và tăng tốc cho phía client, ta sử dụng kĩ thuật cache lại các resource trước đó. Để làm được, ta phải đánh dấu trong response rằng resource này là cacheable or non-cacheable.
+    
+    Đổi lại, cache làm giảm độ tin cậy của ứng dụng vì đôi khi dữ liệu hiển thị trên máy user khác với dữ liệu trong server.
+    
+    Đọc thêm về cache: [https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_4](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm#sec_5_1_4)
+    
+5. **Layered System**
+    
+    ![https://www.ics.uci.edu/~fielding/pubs/dissertation/layered_uccss.gif](https://www.ics.uci.edu/~fielding/pubs/dissertation/layered_uccss.gif)
+    
+    REST giúp ta có thể layer system phía server thoải mái mà không sợ mất kết nối với client, vì cơ bản client không biết nó đang kết nối vào đâu trong server, mà chỉ kết nối thông qua API thôi.
+    
+6. **Code on demand (optional)**
+    
+    Chúng ta ngoài gửi resouce ở dạng XML hoặc là JSON, ta còn có thể gửi ở dạng một đoạn code có thể thực thi cho client. Nhưng kĩ thuật này đã bị bỏ trên hầu hết các trình duyệt.
+    
+    > All the above constraints help you build a truly RESTful API, and you  should follow them. Still, at times, you may find yourself violating one or two constraints. Do not worry; you are still making a RESTful API –  but not “truly RESTful.”
+    > 
+
+### HTTP Methods in REST
+
+**Resource methods** trong REST là phương thức để tương tác với resource, khác với **HTTP methods**. Nhưng do ta thường sử dụng HTTP methods để hiện thực REST resource method, nên nhiều người nhầm lẫn Resource methods là HTTP methods.
+
+Thực tế, Roy Fielding không đề cập việc phải sử dụng HTTP method nào cho hành động nào, ông chỉ nhấn mạnh về việc **Uniform Interface**. Vậy nên ta nên làm theo những best practice của cộng đồng đưa ra.
+
+### Một số best practice khi implements REST API
+
+1. **Đặt tên Resource là danh từ số nhiều.**
+    
+    Ví dụ: `GET /students` để get tất cả students hoặc là `GET /students/5` để get student thứ 5.
+    
+2. **Dùng HTTP methods để CRUD resource:**
+    
+    [Untitled](https://www.notion.so/7250c8b8e43b428e86d2f8412c2d301f)
+    
+3. **Sử dụng Status code phù hợp cho Error Handling**
+    
+    [Untitled](https://www.notion.so/093e0afd240e43dba26a15a1faa3ce69)
+    
+    Chi tiết các status code: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+    
+4. **Sử dụng Nesting on Endpoints thể hiện Relationship giữ các resources**
+    
+    Ví dụ: Lấy thông tin Author của 1 bài post: `/posts/postId/authors`
+    
+5. **Sử dụng Filtering, Sorting, Paging trên endpoints để request data**
+    
+    Ví dụ:
+    
+    **Filtering**: `GET /cars?seats<=2`
+    
+    **Sorting**: `GET /users?sort_by=+email`
+    
+    **Paging**: `GET /items?limit=20&offset=100`
+    
+    Đọc thêm: [https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/)
+    
+
+# Demo using ASP.NET Web API
+
+# References
+
+- [https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
+- [https://restfulapi.net](https://restfulapi.net/)
+- [https://www.redhat.com/en/topics/api/what-is-a-rest-api](https://www.redhat.com/en/topics/api/what-is-a-rest-api)
+- [https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/](https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/)
+- [https://medium.com/@mwaysolutions/10-best-practices-for-better-restful-api-cbe81b06f291](https://medium.com/@mwaysolutions/10-best-practices-for-better-restful-api-cbe81b06f291)', N'REST là một tập các nguyên lí, ràng buộc về architectural style, không phải là protocol hay standard, vậy nên ta có thể implements nó theo rất nhiều cách khác nhau.', 1635404784814, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'A06F433E-F36B-1410-8345-00D1D56254E8', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1635405396531, N'4A31433E-F36B-1410-894F-008CAF34AFE2', 5);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'E231433E-F36B-1410-894F-008CAF34AFE2', N'EFF3423E-F36B-1410-894A-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2F120px-JavaScript-logo.png?alt=media&token=d3ff1789-74fc-4f07-9257-278df85960ad', N'JavaScript language and JavaScript', N'At the same time that Netscape started using Java in the Netscape browser , LiveScript was renamed to JavaScript to gain more attention because the Java programming language was then considered a phenomenon. JavaScript was added to the Netscape browser starting with version 2.0b3 of the browser in December 1995 . In fact, JavaScript was not developed from Java. Therefore JavaScript is based solely on Java naming conventions. Java Script consists of two arrays: client-server that executes commands on end-user''s machine and web-server''s machine.
+
+After the success of JavaScript, Microsoft began to develop JScript , a language with the same application and compatibility with JavaScript. JScript was added to the Internet Explorer browser starting with Internet Explorer version 3.0, which was released in August 1996 .
+
+DOM (Document Object Model) , a concept often referred to with JavaScript is in fact not part of the ECMAScript standard, the DOM is a separate standard that is closely related to XML.
+
+Applications 
+JavaScript is a prototype-based programming language with a syntax that evolved from C. Like C, JavaScript has a keyword concept , so JavaScript is nearly impossible to extend.
+
+Like C, JavaScript does not have the processor exit / entry ( input / output ) separately. While C uses a standard I/ O library , JavaScript relies on built-in language software to perform I/ O .
+
+On the browser, a lot of websites use JavaScript to design dynamic web pages and some visual effects through the DOM. JavaScript is used to perform some tasks that cannot be done with only HTML such as checking input information, automatically changing images, etc. In Vietnam , JavaScript is also used as a language percussion tool. Vietnamese is the same as the percussion currently used on the Vietnamese Wikipedia page . However, each browser applies JavaScript differently and does not follow the W3C DOM standard , so in many cases programmers have to write multiple versions of the same code to be able to work in multiple browsers. Some prominent technologies that use JavaScript to interact with the DOM includeDHTML , Ajax and SPA .
+
+Outside the browser, JavaScript can be used in file PDF of Adobe Acrobat and Adobe Reader . Dashboard controls on the operating system Mac OS X version 10.4 also uses JavaScript. Technological scenario flexible ( active scripting ) that supports Microsoft''s JScript language as a scripting language for the operating system. JScript.NET is a CLI- compatible language that is similar to JScript but with more object-oriented programming features.
+
+Since Nodejs was born in 2009, Javascript is more known as a cross-platform language when it can run on both server and embedded environments.
+
+Each of these applications provides its own object model that allows interaction with the host environment, with the core being the nearly identical JavaScript programming language.', N'JavaScript , in its current version, is an interpreted programming language developed from the concept of prototypes . This language is widely used for websites (user side) as well as server side (with Nodejs)', 1635405012588, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'A06F433E-F36B-1410-8345-00D1D56254E8', null, 0, N'DE31433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'0832433E-F36B-1410-894F-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Findex.png?alt=media&token=da6349da-230a-446f-9aad-1acb8e9b19d4', N'How to Use ngrok', N'In this article, let’s talk about ngrok and how it can be used to create a secure tunnel to your local machine where you are able to share your localhost server with anyone at any time.
+
+A real case scenario where you can use this could be for an interview where you can share your localhost with the interview panel and they can see the changes you make in real-time.
+What is ngrok?
+
+Your development machine may be connected to a secure network behind a firewall.
+
+To work around access restrictions, ngrok runs a small client process on your machine which creates a private connection tunnel to the cloud service.
+
+Your localhost development server is mapped to a ngrok.io sub-domain, which a remote user can then access.
+
+There’s no need to expose ports, set up forwarding, or make other network changes.
+
+It’s that simple!
+Is Local Tunneling Secure?
+
+The connection tunnel established by ngrok is secure and can only transmit data to the localhost port you have open.
+
+It would be difficult to do any damage, but it’s only as secure as the application you’re testing.
+Does this service cost?
+
+The basic ngrok service is free and permits up to four tunnels and 40 connections per minute.
+
+Commercial options start from $5 per month, providing further connections and custom domains.
+
+On the upcoming blog let’s see how to implement this practically 😉
+
+Happy learning!', N'Using ngrok to Share Your Local Server', 1635405023234, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'A36F433E-F36B-1410-8345-00D1D56254E8', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1635406733530, N'0132433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'2332433E-F36B-1410-894F-008CAF34AFE2', N'9946433E-F36B-1410-8937-008CAF34AFE2', null, N'The Missing SQL Basics Crash Course', N'![](https://cdn.devdojo.com/posts/images/September2021/the-missing-sql-basics-crash-course1.jpg?auto=format&q=70&w=1280)
+
+Introduction
+
+No matter if you are a DevOps/SysOps engineer, developer, or just a Linux enthusiast, you will most likely have to use SQL at some point in your career.
+
+The guide is suitable for anyone working as a developer, system administrator, or a DevOps engineer and wants to learn the basics of SQL.
+Databases
+
+Before we dive deep into SQL, let''s quickly define what a database is.
+
+The definition of databases from Wikipedia is:
+
+    A database is an organized collection of data, generally stored and accessed electronically from a computer system.
+
+In other words, a database is a collection of data stored and structured in different database tables.
+Tables and columns
+
+You''ve most likely worked with spreadsheet systems like Excel or Google Sheets. At the very basic, database tables are quite similar to spreadsheets.
+
+Each table has different columns which could contain different types of data.
+
+For example, if you have a todo list app, you would have a database, and in your database, you would have different tables storing different information like:
 
 
-6082433E-F36B-1410-893A-008CAF34AFE2
-Here are some C programming basics for those new to programming in C.
+    Users - In the users table, you would have some data for your users like: username, name, and active, for example.
+    Tasks - The tasks table would store all of the tasks that you are planning to do. The columns of the tasks table would be for example, task_name, status, due_date and priority.
 
-## **C Program Basics**
+The Users table will look like this:
 
-All C programs basically contain the following elements:
++----+----------+---------------+--------+
+| id | username | name          | active |
++----+----------+---------------+--------+
+| 1  |    bobby | Bobby Iliev   |   true |
+| 2  |   greisi | Greisi I.     |   true |
+| 3  |  devdojo | Dev Dojo      |  false |
++----+----------+---------------+--------+
 
-1. Preprocessor Commands
+Rundown of the table structure:
 
-2. Functions
+    We have 4 columns: id, username, name and active
+    We also have 3 entries/users
+    The id column is a unique identifier of each user and is auto-incremented.
 
-3. Variables
+Next we will learn how to install MySQL and create our first database.
+MySQL
 
-4. Statements and Expressions
+Now that you know what a database, table, and column are, the next thing that you would need to do is install a database service where you would be running your SQL queries on.
 
-5. Comments
+We would be using MySQL as it is free, open-source, and very widely used.
+Installing MySQL
 
-## **Preprocessor Commands**
+As we are going to use Ubuntu, in order to install MySQL run the following commands:
 
-These commands tell the processor to do something before compilation. Preprocessor commands generally consist of include statements. The  include command is called using the hash key and these statements tell C to include the contents of the included file before it continues on to  process the rest of the commands.
+    First update your apt repository:
 
-The following is an example of a preprocessor command:
+sudo apt update -y
 
-\#include <stdio.h>
+    Then install MySQL:
 
-This command tells C to include the functions within the stdio.h file before it moves onto the next function and compiles the functions  within this program. The stdio.h file includes functions like the printf and getchar functions so these functions are loaded and ready for use  by using the include directive.
+sudo apt install mysql-server mysql-client
 
-## **Functions**
+We are installing 2 packages, one is the actual MySQL server, and the other is the MySQL client, which would allow us to connect to the MySQL server and run our queries.
 
-C programs mainly consist of functions and functions form the main  building blocks of a C program. Every C program must contain at least  one function called “main()”. The main function returns a variable and  is therefore prefaced by the keyword “int” to represent the integer it  returns. The integer is returned in the function using the return  keyword. Functions are delineated using curly brackets. Each set of  brackets marks a function. Curly braces are used to delineate code  blocks within the C programming environment.
+In order to check if MySQL is running, run the following command:
 
-Here is a very basic example of a C program:
+sudo systemctl status mysql.service
 
-```
-#include <stdio.h>
-int main()
-{
-/* My first C program */
-printf("I can program in C! \n");
-return 0;
-}
-```
+In order to secure your MySQL server, you could run the following command:
 
-Note the inclusion of the stdio.h file so that we can access the  printf function and note the curly brackets to show that this is a  single code block. The stdio file is an acronym for “standard  input/output” and hence contains a lot of the input/output functions  used in C like the printf, getchar, and scanf functions.
+sudo mysql_secure_installation
 
-## **Variables in C**
+Then follow the prompt and finally choose a secure password and save it in a secure place like a password manager.
 
-Like most programming languages, C allows for the declaration of  variables. There are two types of variables recognized by C namely,  local and global variables. Variables are declared by declaring the  variable type and assigning a name to the variable. Variable type can  include int which stores an integer, char which stores a single char,  float which stores floating point values and pointer which stores the  address of another variable.
+With that, you would have MySQL installed on your Ubuntu server. The above should also work just fine on Debian.
+Install MySQL on Mac
 
-Local variables have a limited scope. Their scope is limited to the  duration of the programming block within which the variable is defined.  Local variables are declared at the top of the programming block to  which they apply. A local variable must be initialized by the  programmer. T', N'Description nay tao ra nham muc dich update test', 1634527726627, N'7A82433E-F36B-1410-893A-008CAF34AFE2', N'F71E433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'6082433E-F36B-1410-893A-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'C94C433E-F36B-1410-8942-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', null, N'Test upload thumbnails 01', N'Bai nay dang de test upload', N'Description ne', 1634543569874, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'F71E433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'C44C433E-F36B-1410-8942-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'CD4C433E-F36B-1410-8942-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', null, N'Test thumbnail 02', N'Content ne', N'Description ne', 1634543860219, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'131F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'CB4C433E-F36B-1410-8942-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'DB4C433E-F36B-1410-8942-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', null, N'Test thumbnail 03', N'Content ne', N'Description ne', 1634544127599, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'051F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'D44C433E-F36B-1410-8942-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'E94C433E-F36B-1410-8942-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', null, N'Title thumbnail 04', N'Content ne', N'Description ne', 1634544352198, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'131F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'E24C433E-F36B-1410-8942-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'F34C433E-F36B-1410-8942-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', null, N'Thumbnail 07', N'asdasd', N'asdasd', 1634552243135, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'0C1F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'EE4C433E-F36B-1410-8942-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'F54C433E-F36B-1410-8942-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FbeDXD.png?alt=media&token=b7674985-9fb6-4b4e-915e-c1cdba872aaf', N'thumbnail 09', N'asdasdads', N'asdasdasd', 1634552918421, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'0C1F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'F44C433E-F36B-1410-8942-008CAF34AFE2', null);
-INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'FB4C433E-F36B-1410-8942-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', null, N'thumbnail 08, no thumbnail', N'asdasdasd', N'adsasdasd', 1634552954799, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'131F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'F84C433E-F36B-1410-8942-008CAF34AFE2', null);
+I would recommend installing MySQL using Homebrew:
+
+brew install mysql
+
+After that start MySQL:
+
+brew services start mysql
+
+And finally, secure it:
+
+mysql_secure_installation
+
+In case that you ever need to stop the MySQL service, you could do so with the following command:
+
+brew services stop mysql
+
+Install MySQL on Windows
+
+In order to install MySQL on Windows, I would recommend following the steps from the official documentation here:
+
+https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html
+Accessing MySQL via CLI
+
+To access MySQL run the mysql command followed by your user:
+
+mysql -u root -p
+
+Creating a database
+
+After that, switch to the demo database that we created in the previous chapter:
+
+USE demo_db;
+
+To exit the just type the following:
+
+exit;
+
+Configuring .my.cnf
+
+By configuring the ~/.my.cnf file in your user''s home directory, MySQL would allow you to login without prompting you for a password.
+
+In order to make that change, what you need to do is first create a .my.cnf file in your user''s home directory:
+
+touch ~/.my.cnf
+
+After that, set secure permissions so that other regular users could not read the file:
+
+chmod 600 ~/.my.cnf
+
+Then using your favorite text editor, open the file:
+
+nano ~/.my.cnf
+
+And add the following configuration:
+
+[client]
+user=YOUR_MYSQL_USERNAME
+password=YOUR_MYSQL_PASSWORD
+
+Make sure to update your MySQL credentials accordingly, then save the file and exit.
+
+After that, if you run just mysql, you will be authenticated directly with the credentials that you''ve specified in the ~/.my.cnf file without being prompted for a password.
+The mysqladmin command
+
+As a quick test, you could check all of your open SQL connections by running the following command:
+
+mysqladmin proc
+
+The mysqladmin tool would also use the client details from the ~/.my.cnf file, and it would list your current MySQL process list.
+
+Another cool thing that you could try doing is combining this with the watch command and kind of monitor your MySQL connections in almost real-time:
+
+watch -n1 mysqladmin proc
+
+To stop the watch command, just hit CTRL+C
+GUI clients
+
+If you prefer using GUI clients, you could take a look a the following ones and install them locally on your laptop:
+
+    MySQL Workbench
+    Sequel Pro
+    TablePlus
+
+This will allow you to connect to your database via a graphical interface rather than the mysql command-line tool.
+Tables
+
+Before we get started with SQL, let''s learn how to create tables and columns.
+
+As an example, we are going to create a users table with the following columns:
+
+    id - this is going to be the primary key of the table and would be the unique identifier of each user.
+    username - this column would hold the username of our users
+    name - here, we will store the full name of users
+    status - here, we will store the status of a user, which would indicate if a user is active or not.
+
+You need to specify the data type of each column.
+
+In our case it would be like this:
+
+    id - Integer
+    username - Varchar
+    name - Varchar
+    status - Number
+
+Data types
+
+The most common data types that you would come across are:
+
+    CHAR(size): Fixed-length character string with a maximum length of 255 bytes.
+    VARCHAR(size): Variable-length character string. Max size is specified in parenthesis.
+    TEXT(size): A string with a maximum length of 65,535 bytes.
+    INTEGER(size) or INT(size): A medium integer.
+    BOOLEAN or BOOL: Holds a true or false value.
+    DATE: Holds a date.
+
+Let''s have the following users table as an example:
+
+    id: We would want to set the ID to INT.
+    name: The name should fit in a VARCHAR column.
+    about: As the about section could be longer, we could set the column data type to TEXT.
+    birthday: For the birthday column of the user, we could use DATE.
+
+For more information on all data types available, make sure to check out the official documentation here.
+Creating a database
+
+As we briefly covered in the previous chapter, before you could create tables, you would need to create a database by running the following:
+
+    First access MySQL:
+
+mysql -u root -p
+
+    Then create a database called demo_db:
+
+CREATE DATABASE demo_d;
+
+    Note: the database name needs to be unique, if you already have a database named demo_db you would receive an error that the database already exists.
+
+You can consider this database as the container where we would create all of the tables in.
+
+Once you''ve created the database, you need to switch to that database:
+
+USE demo_db;
+
+You can think of this as accessing a directory in Linux with the cd command. With USE, we switch to a specific database.
+
+Alternatively, if you do not want to ''switch'' to the specific database, you would need to specify the so-called fully qualified table name. For example, if you had a users table in the demo_db, and you wanted to select all of the entries from that table, you could use one of the following two approaches:
+
+    Switch to the demo_db first and then run a select statement:
+
+USE demo_db;
+SELECT username FROM demo_db.users;
+
+    Alternatively, rather than using the USE command first, specify the database name followed by the table name separated with a dot: db_name.table_name:
+
+SELECT username FROM demo_db.users;
+
+We are going to cover the SELECT statement more in-depth in the following chapters.
+Creating tables
+
+In order to create a table, you need to use the CREATE TABLE statement followed by the columns that you want to have in that table and their data type.
+
+Let''s say that we wanted to create a users table with the following columns:
+
+    id: An integer value
+    username: A varchar value
+    about: A text type
+    birthday: Date
+    active: True or false
+
+The query that we would need to run to create that table would be:
+
+CREATE TABLE users
+(
+    id INT,
+    username VARCHAR(255),
+    about TEXT,
+    birthday DATE,
+    active BOOL
+);
+
+    Note: You need to select a database first with the USE command as mentioned above. Otherwise you will get the following error: ERROR 1046 (3D000): No database selected.
+
+To list the available tables, you could run the following command:
+
+SHOW TABLES;
+
+Output:
+
++-------------------+
+| Tables_in_demo_db |
++-------------------+
+| users             |
++-------------------+
+
+Dropping tables
+
+You can drop or delete tables by using the DROP TABLE statement.
+
+Let''s test that and drop the table that we''ve just created:
+
+DROP TABLE users;
+
+The output that you would get would be:
+
+Query OK, 0 rows affected (0.03 sec)
+
+And now, if you were to run the SHOW TABLES; query again, you would get the following output:
+
+Empty set (0.00 sec)
+
+Allowing NULL values
+
+By default, each column in your table can hold NULL values. In case that you don''t wanted to allow NULL values for some of the columns in a specific table, you need to specify this during the table creation or later on change the table to allow that.
+
+For example, let''s say that we want the username column to be a required one, we would need to alter the table create statement and include NOT NULL right next to the username column like this:
+
+CREATE TABLE users
+(
+    id INT,
+    username VARCHAR(255) NOT NULL,
+    about TEXT,
+    birthday DATE,
+    active BOOL
+);
+
+That way, when you try to add a new user, MySQL will let you know that the username column is required.
+Specifying a primary key
+
+The primary key column, which in our case is the id column, is a unique identifier for our users.
+
+We want the id column to be unique, and also, whenever we add new users, we want the ID of the user to autoincrement for each new user.
+
+This can be achieved with a primary key and AUTO_INCREMENT. The primary key column needs to be NOT NULL as well.
+
+If we were to alter the table creation statement, it would look like this:
+
+CREATE TABLE users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    about TEXT,
+    birthday DATE,
+    active BOOL
+);
+
+Updating tables
+
+In the above example, we created a new table and then dropped it as it was empty. However, in a real-life scenario, this would really be the case.
+
+So whenever you need to add or remove a new column from a specific table, you would need to use the ALTER TABLE statement.
+
+Let''s say that we wanted to add an email column with type varchar to our users table.
+
+The syntax would be:
+
+ALTER TABLE users ADD email VARCHAR(255);
+
+After that, if you were to describe the table, you would see the new column:
+
+DESCRIBE users;
+
+Output:
+
++----------+--------------+------+-----+---------+
+| Field    | Type         | Null | Key | Default |
++----------+--------------+------+-----+---------+
+| id       | int          | NO   | PRI | NULL    |
+| username | varchar(255) | NO   |     | NULL    |
+| about    | text         | YES  |     | NULL    |
+| birthday | date         | YES  |     | NULL    |
+| active   | tinyint(1)   | YES  |     | NULL    |
+| email    | varchar(255) | YES  |     | NULL    |
++----------+--------------+------+-----+---------+
+
+If you wanted to drop a specific column, the syntax would be:
+
+ALTER TABLE table_name DROP COLUMN column_name;
+
+    Note: keep in mind that this is a permanent change, and if you have any critical data in the specific column, it would be deleted instantly.
+
+You can use the ALTER TABLE statement to also change the data type of a specific column. For example, you could change the about column from TEXT to LONGTEXT type, which could hold longer strings.
+
+    Note: Important thing to keep in mind is that if a specific table already holds a particular type of data value like an integer, you can''t alter it to varchar, for example. Only if the column does not contain any values, then you could make the change.
+
+Basic Syntax
+
+In this chapter, we will go over the basic SQL syntax.
+
+SQL statements are basically the ''commands'' that you run against a specific database. Through the SQL statements, you are telling MySQL what you want it to do, for example, if you wanted to get the username of all of your users stored in the users table, you would run the following SQL statement:
+
+SELECT username FROM users ;
+
+Rundown of the statement:
+
+    SELECT: First, we specify the SELECT keyword, which indicates that we want to select some data from the database. Other popular keywords are: INSERT, UPDATE and DELETE.
+    username: Then we specify which column we want to select
+    users: After that, we specify the table that we want to select the data from.
+    The ; is required. Every SQL statement needs to end with a semicolumn.
+
+If you run the above statement, you will get no results as the new users table that we''ve just created is empty.
+
+    As a good practice, all SQL keywords should be with uppercase, however, it would work just fine if you use lower case as well.
+
+Let''s go ahead and cover the basic operations next.
+INSERT
+
+To add data to your database, you would use the INSERT statement.
+
+Let''s use the table that we created in the last chapter and insert 1 user into our users table:
+
+INSERT INTO users(username, email, active) VALUES(''bobby'', ''bobby@bobbyiliev.com'', true);
+
+Rundown of the insert statement:
+
+    INSERT INTO users: first, we specify the INSERT INTO keyword, which tells MySQL that we want to insert data into the users table.
+    users (username, email, active): then, we specify the table name users and the columns that we want to insert data into.
+    VALUES: then, we specify the values that we want to insert in.
+
+SELECT
+
+Once we''ve inserted that user, let''s go ahead and retrieve the information.
+
+To retrieve information from your database, you could use the SELECT statement:
+
+SELECT * FROM users;
+
+Output:
+
++----+----------+-------+----------+--------+---------------+
+| id | username | about | birthday | active | email         |
++----+----------+-------+----------+--------+---------------+
+|  1 | bobby    | NULL  | NULL     |      1 | bobby@b...com |
++----+----------+-------+----------+--------+---------------+
+
+As we specify * right after the SELECT keyword, this means that we want to get all of the columns from the users table.
+
+If we wanted to the only the username and the email columns instead, we would change the statement to:
+
+SELECT username,email FROM users;
+
+This will return all of the users, but as of the time being we have only 1:
+
++----------+----------------------+
+| username | email                |
++----------+----------------------+
+| bobby    | bobby@bobbyiliev.com |
++----------+----------------------+
+
+UPDATE
+
+In order to modify data in your database, you could use the UPDATE statement.
+
+The syntax would look like this:
+
+UPDATE users SET username=''bobbyiliev'' WHERE id=1;
+
+Rundown of the statement:
+
+    UPDATE users: first, we specify the UPDATE keyword followed by the table that we want to update
+    username=''bobbyiliev'' Then we specify the columns that we want to update and the new value that we want to set.
+    WHERE id=1: Finally, by using the WHERE clause, we specify which user should be updated. In our case it is the user with ID 1.
+
+    NOTE: If we don''t specify a WHERE clause, all of the entries inside the users table would be updated, and all users would have the username set to bobbyiliev. You need to be careful when you use the UPDATE statement without a WHERE clause, as every single row will be updated.
+
+We are going to cover WHERE more in-depth in the next few chapters.
+DELETE
+
+As the name suggests, the DELETE statement would remove data from your database.
+
+The syntax is as follows:
+
+DELETE FROM users WHERE id=1;
+
+Similar to the UPDATE statement, if you don''t specify a WHERE clause, all of the entries from the table will be affected, meaning that all of your users will be deleted.
+Comments
+
+In case that you are writing a larger SQL script, it might be helpful to add some comments so that later on, when you come back to the script, you would know what each line does.
+
+As with all programming languages, you can add comments in SQL as well.
+
+There are two types of comments:
+
+    Inline comments:
+
+To do so, you just need to add -- before the text that you want to comment out:
+
+SELECT * FROM users; -- Get all users
+
+    Multiple-line comments
+
+Similar to some other programming languages in order to comment multiple lines, you could wrap the text in /* */ as follows:
+
+/*
+Get all of the users
+from your database
+*/
+SELECT * FROM users;
+
+You could write that in .sql file and then run it later on, or execute the few lines directly.', N'', 1635405248100, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'426F433E-F36B-1410-8345-00D1D56254E8', null, 0, N'2032433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'7532433E-F36B-1410-894F-008CAF34AFE2', N'AF30433E-F36B-1410-894F-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fsolid.jpg?alt=media&token=9a02b0fe-93d4-4026-975a-301c521c6104', N'What is SOLID ?', N'### SOLID is an acronym for the first five object-oriented design (OOD) principles by Robert C. Martin (also known as Uncle Bob).
+  SOLID stands for:
+- S - Single-responsiblity Principle
+- O - Open-closed Principle
+- L - Liskov Substitution Principle
+- I - Interface Segregation Principle
+- D - Dependency Inversion Principle
+', N'Simply explain what is SOLID stands for', 1635405257238, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'C46F433E-F36B-1410-8345-00D1D56254E8', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1635405409808, N'6F32433E-F36B-1410-894F-008CAF34AFE2', 2.5);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'0C33433E-F36B-1410-894F-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Findex.jpg?alt=media&token=570b7d49-90a1-47bc-b06d-333c871d8e37', N' A modern, fast, web framework for building APIs with Python ', N'![](https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)
+
+ Test Coverage Package version
+
+Documentation: https://fastapi.tiangolo.com
+
+Source Code: https://github.com/tiangolo/fastapi
+
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
+
+The key features are:
+
+    Fast: Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic). One of the fastest Python frameworks available.
+
+    Fast to code: Increase the speed to develop features by about 200% to 300%. *
+
+    Fewer bugs: Reduce about 40% of human (developer) induced errors. *
+
+    Intuitive: Great editor support. Completion everywhere. Less time debugging.
+
+    Easy: Designed to be easy to use and learn. Less time reading docs.
+
+    Short: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
+
+    Robust: Get production-ready code. With automatic interactive documentation.
+
+    Standards-based: Based on (and fully compatible with) the open standards for APIs: OpenAPI (previously known as Swagger) and JSON Schema.
+
+* estimation based on tests on an internal development team, building production applications.
+
+Gold Sponsors
+
+Other sponsors
+
+Opinions
+
+“[…] I’m using FastAPI a ton these days. […] I’m actually planning to use it for all of my team’s ML services at Microsoft. Some of them are getting integrated into the core Windows product and some Office products.“
+Kabir Khan – Microsoft (ref)
+
+“We adopted the FastAPI library to spawn a REST server that can be queried to obtain predictions. [for Ludwig]“
+Piero Molino, Yaroslav Dudin, and Sai Sumanth Miryala – Uber (ref)
+
+“Netflix is pleased to announce the open-source release of our crisis management orchestration framework: Dispatch! [built with FastAPI]“
+Kevin Glisson, Marc Vilanova, Forest Monsen – Netflix (ref)
+
+“I’m over the moon excited about FastAPI. It’s so fun!“
+Brian Okken – Python Bytes podcast host (ref)
+
+“Honestly, what you’ve built looks super solid and polished. In many ways, it’s what I wanted Hug to be – it’s really inspiring to see someone build that.“
+Timothy Crosley – Hug creator (ref)
+
+“If you’re looking to learn one modern framework for building REST APIs, check out FastAPI […] It’s fast, easy to use and easy to learn […]“
+
+“We’ve switched over to FastAPI for our APIs […] I think you’ll like it […]“
+Ines Montani – Matthew Honnibal – Explosion AI founders – spaCy creators (ref) – (ref)
+
+Typer, the FastAPI of CLIs
+
+If you are building a CLI app to be used in the terminal instead of a web API, check out Typer.
+
+Typer is FastAPI’s little sibling. And it’s intended to be the FastAPI of CLIs.
+⌨️
+
+?
+
+Requirements
+
+Python 3.6+
+
+FastAPI stands on the shoulders of giants:
+
+    Starlette for the web parts.
+    Pydantic for the data parts.
+
+Installation
+
+$ pip install fastapi
+
+---> 100%
+
+You will also need an ASGI server, for production such as Uvicorn or Hypercorn.
+
+$ pip install uvicorn[standard]
+
+---> 100%
+
+Example
+
+Create it
+
+    Create a file main.py with:
+
+from typing import Optional
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Optional[str] = None):
+    return {"item_id": item_id, "q": q}
+
+Or use async def…
+
+Run it
+
+Run the server with:
+
+$ uvicorn main:app --reload
+
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [28720]
+INFO:     Started server process [28722]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+
+About the command uvicorn main:app --reload…
+
+Check it
+
+Open your browser at http://127.0.0.1:8000/items/5?q=somequery.
+
+You will see the JSON response as:
+
+{"item_id": 5, "q": "somequery"}
+
+You already created an API that:
+
+    Receives HTTP requests in the paths / and /items/{item_id}.
+    Both paths take GET operations (also known as HTTP methods).
+    The path /items/{item_id} has a path parameter item_id that should be an int.
+    The path /items/{item_id} has an optional str query parameter q.
+
+Interactive API docs
+
+Now go to http://127.0.0.1:8000/docs.
+
+You will see the automatic interactive API documentation (provided by Swagger UI):
+
+Swagger UI
+
+Alternative API docs
+
+And now, go to http://127.0.0.1:8000/redoc.
+
+You will see the alternative automatic documentation (provided by ReDoc):
+
+ReDoc
+
+Example upgrade
+
+Now modify the file main.py to receive a body from a PUT request.
+
+Declare the body using standard Python types, thanks to Pydantic.
+
+from typing import Optional
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    price: float
+    is_offer: Optional[bool] = None
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Optional[str] = None):
+    return {"item_id": item_id, "q": q}
+
+
+@app.put("/items/{item_id}")
+def update_item(item_id: int, item: Item):
+    return {"item_name": item.name, "item_id": item_id}
+
+The server should reload automatically (because you added --reload to the uvicorn command above).
+
+Interactive API docs upgrade
+
+Now go to http://127.0.0.1:8000/docs.
+
+    The interactive API documentation will be automatically updated, including the new body:
+
+Swagger UI
+
+    Click on the button “Try it out”, it allows you to fill the parameters and directly interact with the API:
+
+Swagger UI interaction
+
+    Then click on the “Execute” button, the user interface will communicate with your API, send the parameters, get the results and show them on the screen:
+
+Swagger UI interaction
+
+Alternative API docs upgrade
+
+And now, go to http://127.0.0.1:8000/redoc.
+
+    The alternative documentation will also reflect the new query parameter and body:
+
+ReDoc
+
+Recap
+
+In summary, you declare once the types of parameters, body, etc. as function parameters.
+
+You do that with standard modern Python types.
+
+You don’t have to learn a new syntax, the methods or classes of a specific library, etc.
+
+Just standard Python 3.6+.
+
+For example, for an int:
+
+item_id: int
+
+or for a more complex Item model:
+
+item: Item
+
+…and with that single declaration you get:
+
+    Editor support, including:
+        Completion.
+        Type checks.
+    Validation of data:
+        Automatic and clear errors when the data is invalid.
+        Validation even for deeply nested JSON objects.
+    Conversion of input data: coming from the network to Python data and types. Reading from:
+        JSON.
+        Path parameters.
+        Query parameters.
+        Cookies.
+        Headers.
+        Forms.
+        Files.
+    Conversion of output data: converting from Python data and types to network data (as JSON):
+        Convert Python types (str, int, float, bool, list, etc).
+        datetime objects.
+        UUID objects.
+        Database models.
+        …and many more.
+    Automatic interactive API documentation, including 2 alternative user interfaces:
+        Swagger UI.
+        ReDoc.
+
+Coming back to the previous code example, FastAPI will:
+
+    Validate that there is an item_id in the path for GET and PUT requests.
+    Validate that the item_id is of type int for GET and PUT requests.
+        If it is not, the client will see a useful, clear error.
+    Check if there is an optional query parameter named q (as in http://127.0.0.1:8000/items/foo?q=somequery) for GET requests.
+        As the q parameter is declared with = None, it is optional.
+        Without the None it would be required (as is the body in the case with PUT).
+    For PUT requests to /items/{item_id}, Read the body as JSON:
+        Check that it has a required attribute name that should be a str.
+        Check that it has a required attribute price that has to be a float.
+        Check that it has an optional attribute is_offer, that should be a bool, if present.
+        All this would also work for deeply nested JSON objects.
+    Convert from and to JSON automatically.
+    Document everything with OpenAPI, that can be used by:
+        Interactive documentation systems.
+        Automatic client code generation systems, for many languages.
+    Provide 2 interactive documentation web interfaces directly.
+
+We just scratched the surface, but you already get the idea of how it all works.
+
+Try changing the line with:
+
+    return {"item_name": item.name, "item_id": item_id}
+
+…from:
+
+        ... "item_name": item.name ...
+
+…to:
+
+        ... "item_price": item.price ...
+
+…and see how your editor will auto-complete the attributes and know their types:
+
+editor support
+
+For a more complete example including more features, see the Tutorial – User Guide.
+
+Spoiler alert: the tutorial – user guide includes:
+
+    Declaration of parameters from other different places as: headers, cookies, form fields and files.
+    How to set validation constraints as maximum_length or regex.
+    A very powerful and easy to use Dependency Injection system.
+    Security and authentication, including support for OAuth2 with JWT tokens and HTTP Basic auth.
+    More advanced (but equally easy) techniques for declaring deeply nested JSON models (thanks to Pydantic).
+    Many extra features (thanks to Starlette) as:
+        WebSockets
+        GraphQL
+        extremely easy tests based on requests and pytest
+        CORS
+        Cookie Sessions
+        …and more.
+
+Performance
+
+Independent TechEmpower benchmarks show FastAPI applications running under Uvicorn as one of the fastest Python frameworks available, only below Starlette and Uvicorn themselves (used internally by FastAPI). (*)
+
+To understand more about it, see the section Benchmarks.
+
+Optional Dependencies
+
+Used by Pydantic:
+
+    ujson – for faster JSON “parsing”.
+    email_validator – for email validation.
+
+Used by Starlette:
+
+    requests – Required if you want to use the TestClient.
+    aiofiles – Required if you want to use FileResponse or StaticFiles.
+    jinja2 – Required if you want to use the default template configuration.
+    python-multipart – Required if you want to support form “parsing”, with request.form().
+    itsdangerous – Required for SessionMiddleware support.
+    pyyaml – Required for Starlette’s SchemaGenerator support (you probably don’t need it with FastAPI).
+    graphene – Required for GraphQLApp support.
+    ujson – Required if you want to use UJSONResponse.
+
+Used by FastAPI / Starlette:
+
+    uvicorn – for the server that loads and serves your application.
+    orjson – Required if you want to use ORJSONResponse.
+
+You can install all of these with pip install fastapi[all].
+
+License
+
+This project is licensed under the terms of the MIT license.
+GitHub
+
+https://github.com/tiangolo/fastapi', N' FastAPI framework, high performance, easy to learn, fast to code, ready for production ', 1635405819477, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'D26F433E-F36B-1410-8345-00D1D56254E8', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1635405852495, N'0533433E-F36B-1410-894F-008CAF34AFE2', 5);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'4833433E-F36B-1410-894F-008CAF34AFE2', N'AF30433E-F36B-1410-894F-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FMulti-threading-768x360.png?alt=media&token=07d9ee6c-7980-439f-9e59-aaad2c3ecbcc', N'Multithreading in Java', N'##What is Single Thread?
+A single thread in Java is basically a lightweight and the smallest unit of processing. Java uses threads by using a “Thread Class”.
+
+There are two types of thread – user thread and daemon thread (daemon threads are used when we want to clean the application and are used in the background).
+
+When an application first begins, user thread is created. Post that, we can create many user threads and daemon threads.
+
+###Advantages of single thread:
+
+- Reduces overhead in the application as single thread execute in the system
+- Also, it reduces the maintenance cost of the application.
+##What is Multithreading in Java?
+Multithreading in Java is a process of executing two or more threads simultaneously to maximum utilization of CPU. Multithreaded applications execute two or more threads run concurrently. Hence, it is also known as Concurrency in Java. Each thread runs parallel to each other. Mulitple threads don’t allocate separate memory area, hence they save memory. Also, context switching between threads takes less time.
+###Advantages of multithread:
+- The users are not blocked because threads are independent, and we can perform multiple operations at times
+- As such the threads are independent, the other threads won’t get affected if one thread meets an exception.
+
+###Thread Life Cycle in Java
+The Lifecycle of a thread:
+![Multithreading](https://cdn.guru99.com/images/4-2016/042616_0819_Multithread1.png)', N'Basic knowledge about multithreading in Java ', 1635405821082, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'C46F433E-F36B-1410-8345-00D1D56254E8', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1635406769810, N'4233433E-F36B-1410-894F-008CAF34AFE2', 4);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'7533433E-F36B-1410-894F-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fc6a93462-linus-dirk-03.jpg?alt=media&token=aa8af636-d790-4e3a-825a-7a20b3963f6a', N'Linus Torvalds on Community, Rust and Linux’s Longevity', N'This week saw the annual check-in with Linux creator Linus Torvalds at the Open Source Summit North America, this year held in Seattle (as well as virtually).
+
+Torvalds took the stage Tuesday in the ballroom at the Hyatt Regency Seattle for the event’s traditional half-hour of questions from Dirk Hohndel, an early Linux contributor (now also the chief open source officer and vice president at VMware) in an afternoon keynote session.
+
+The ceremony opened by acknowledging a special moment in time with a birthday cake ceremoniously delivered to Torvalds to mark Linux’s 30th anniversary, drawing a round of applause from the audience. Hohndel added he was offering 30th-birthday wishes “to all of the kernel developers — it really is a community also.”
+
+    Linux turns 30! #ossummit #lfelc pic.twitter.com/n11dcbWHPD
+
+    — Deepthi Sigireddi (@ATechGirl) September 28, 2021
+
+The theme of community seemed to keep coming up — notably about what that community has ultimately taught Linus Torvalds.
+Freax and Geeks
+
+Linus TorvaldsIt started with Torvalds’ memories of the first precious hours of the operating system’s release. While he’d intended to call his newly-minted operating system Freax, “I had already been told that the FTP site that I put it on, that I did not maintain, had a directory called Linux. So I had actually changed the name in the kernel main make file to be Linux at that point.”
+
+He added, “I am eternally grateful for two other people for having more taste than I did.”
+
+But then Torvalds remembered he’d expected to move on to the next new and interesting project, leaving Linux behind in a state where “it’s kind of done. It’s not quite usable. But it’s done enough that it’s not interesting anymore.
+
+“That was clearly then what open source changed. Because suddenly this project — that I probably would’ve left behind, if it was only up to me — I started getting questions about, and eventually patches — that just kept the motivation going. And here we are 30 years later, and it’s still what keeps the motivation going.
+
+“Because as far as I’m concerned, it’s been done for 29 of those 30 years, and every single feature ever since has been about things that other people needed or wanted or were interested in.”
+Another Life Lesson
+
+Building Linux had taught Torvalds a lot about computer architecture; his original goal was to learn all the features of his 386-microprocessor computer. But he’d also made some connections, including to people starting a small company in Silicon Valley to clone 386 hardware (which he eventually joined).
+
+Cover of Linus Torvalds and David Diamond book Just for Fun - the Story of an Accidental Revolutionary - via AmazonPicking up the story, Hohndel pointed out that in Torvalds’ first book, the title even begins with the words “Just for Fun.”
+
+“But at some point, you got your first job offer,” Hohndel said. “You got the first commercial interest in, maybe not Linux, but in you as the developer.”
+
+And Torvalds would ultimately learn another life lesson from the IT workers all around him. He remembered seeing the people around him switching companies “every three years or so. I mean, that’s the Silicon Valley way. It’s not universal, but it is pretty common.
+
+“And I just realized, I don’t like doing that. I have these long-term projects. Not everybody is like that — a lot of people find things that they’ve done for a couple of years, it starts to bore them, and they want to find something new.”
+
+He continued, “I realized that I’m the kind of person who is boring and just wants to do one thing. And I’m a one-track mind.”
+A World That Changed
+
+Hohndel recalled just how different hardware was 30 years ago. “My first Linux box had two megabytes — megabyte with an ‘M’, for those younger people here — of memory. So it was a very different world.”
+
+But he also remembers printing out the entirety of Linux’s kernel code. “I don’t recommend doing this today.”
+
+And this led Hohndel to a fascinating question. “When we started, it seemed really easy to get into a project. It all seemed very manageable; it seemed possible to get an overview into a project. If I look around today, and you build a quick little Kubernetes thingy with a couple of microservices and a few containers and use a couple of s3 backends, you have no idea what’s actually running on your computer.
+
+“So if you were starting today,” he asked Torvalds, “what do you think you would be working on?”
+
+Torvalds answered that while he’s a software engineer, he’s more interested in the hardware and compilers that control everything. But then he acknowledged that he grew up in a world where home computers were so simple “that you actually could understand them, which is not true anymore.”
+
+“If I grew up today, he added, “I’m not sure if I would get close enough to the hardware where I would feel comfortable  understanding.”
+
+On the other hand, Torvalds said, today’s world has many more resources, including Raspberry Pi’s and “all these microcontrollers that are much more accessible than they were when I grew up.”
+
+In the early 1990s, he recalled, he had to send away for a 386 architecture manual “because it didn’t exist as a book in the bookstore that I had access to… It had to be ordered from a different country, just to get the manuals for the hardware I had!”
+
+To learn about the 386 today, he said, “You go online, you go to Google, and you type in ‘386 architecture manual.''”
+Fun and Rust
+
+Linus TorvaldsWhen Hohndel asked Torvalds if he has any regrets, Torvalds ended up answering the opposite question.
+
+“I’m very proud of the fact that there’s actually a fair number of people still involved with the kernel that came in in 1991 — I mean, literally 30 years ago.” (Hohndel is one of them.)
+
+The longevity of the Linux community is especially impressive in light of how few contributors there were back in 1991, Torvalds said: “I think that’s a testament to how good the community, on the whole, has been, and how much fun it’s been.”
+
+Yes, fun — and Torvalds still considers that one of the building blocks of the Linux community; “just for fun,” he said, is part of what he still strives for.
+
+It comes up when people talk about the possibility of writing some Linux kernel modules using Rust. “From a technical angle, does that make sense?” Torvalds asked. “Who knows. That’s not the point. The point is for a project to stay interesting — and to stay fun — you have to play with it.”
+
+Even with billions of devices now depending Linux, the project still makes a point of finding fun new directions to explore. “That’s one thing that I’m very proud of, still.”
+
+    A picture of the computer running the Ingenuity Helicopter on Mars – a tiny NASA helicopter that became the first powered aircraft to fly on another planet, powered by #linux! #opensource #ossummit #lfelc pic.twitter.com/Anv1oHo6uS
+
+    — The Linux Foundation (@linuxfoundation) September 29, 2021
+
+After three decades of developing the operating system in C, Hohndel conceded he was “very surprised to see how open you were to this idea of introducing Rust modules into the new system.”
+
+Linus Torvalds
+
+“I really love C,” Torvalds acknowledged. “I think C is a great language, and C is, to me, is really a way to control the hardware at a fairly low level. So that when I see C code, I can pretty closely guess what the compiler does. It is so close to the hardware that you can do anything with [it].”
+
+Yet Torvalds also saw Hohndel’s analogy that it can be like juggling chainsaws. As a long-time watcher of C, Torvalds knows that C’s subtle type interactions “are not always logical” and “are pitfalls for pretty much anybody. And they’re easy to overlook, and in the kernel that’s not always a good thing.” Torvalds called Rust “the first language I saw which looked like this might actually be a solution”
+
+There are other considerations that C programmers value — like high performance and ease of debugging — but there’s still some openness to experiments with Rust. “People have been talking about Rust in the kernel for a long-ish time by now — and it’s not done yet,” the Linux creator said. “So we’ll see.
+
+“Probably next year, we’ll start seeing some first intrepid modules being written in Rust, and maybe being integrated in the mainline kernel.”
+20-Year Predictions?
+
+But there’s a limit to just how much experimenting Torvalds is comfortable with. When Hohndel suggested the next summit be held in Fiji, the moderator quipped that that’ll be costly, “so I’d like to make a proposal.”
+
+Linus Torvalds
+
+Thinking about Linux’s 30th anniversary, he suggested, “If we could take the 1991 email, make an NFT, auction it off…” After all, the first tweet was auctioned in March for $2.9 million in ether, a value of $5.2 million now.
+
+Torvalds wouldn’t bite. “I’m staying out of the whole craziness with crypto and NFT’s. I’m like,” he whispered conspiratorially, “Those people are cuckoo!”
+
+The keynote conversation closed with Hohndel asking what they should do for the 50th anniversary of Linux, in the year 2041, when both of them will be in their 70s.
+
+Characteristically Torvalds answered that, just like with the Linux kernel, he doesn’t make plans more than six months out. But the question did draw some reflection. “I’ve been very happy doing the kernel for 30 years,” Torvalds began thoughtfully.
+
+“Somehow I don’t see myself doing kernel programming when I’m 70. But on the other hand, I didn’t see myself doing kernel programming when I was 50 either, a few years back. So… we’ll see.”', N'This week saw the annual check-in with Linux creator Linus Torvalds at the Open Source Summit North America, this year held in Seattle (as well as virtually).', 1635405973837, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'066F433E-F36B-1410-8345-00D1D56254E8', null, 0, N'7433433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'8C33433E-F36B-1410-894F-008CAF34AFE2', N'AF30433E-F36B-1410-894F-008CAF34AFE2', null, N'Multithreading in Java', N'## What is Single Thread?
+A single thread in Java is basically a lightweight and the smallest unit of processing. Java uses threads by using a “Thread Class”.
+
+There are two types of thread – user thread and daemon thread (daemon threads are used when we want to clean the application and are used in the background).
+
+When an application first begins, user thread is created. Post that, we can create many user threads and daemon threads.
+
+### Advantages of single thread:
+- Reduces overhead in the application as single thread execute in the system
+- Also, it reduces the maintenance cost of the application.
+
+## What is Multithreading in Java?
+Multithreading in Java is a process of executing two or more threads simultaneously to maximum utilization of CPU. Multithreaded applications execute two or more threads run concurrently. Hence, it is also known as Concurrency in Java. Each thread runs parallel to each other. Mulitple threads don’t allocate separate memory area, hence they save memory. Also, context switching between threads takes less time.
+
+### Advantages of multithread:
+- The users are not blocked because threads are independent, and we can perform multiple operations at times
+- As such the threads are independent, the other threads won’t get affected if one thread meets an exception.
+
+###Thread Life Cycle in Java
+The Lifecycle of a thread:
+![Multithreading](https://cdn.guru99.com/images/4-2016/042616_0819_Multithread1.png)', N'Basic knowledge about multithreading in Java ', 1635406136297, N'371F433E-F36B-1410-8934-008CAF34AFE2', N'C46F433E-F36B-1410-8345-00D1D56254E8', null, 0, N'4233433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'C733433E-F36B-1410-894F-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Faspnet-featured.png?alt=media&token=3f6ad0ee-cc76-4657-8362-8acff3abea8e', N'Repository Pattern and Unit of Work with ASP.NET Core Web API', N'Hello All, I plan to tell you how to implement a unit of work with the repository pattern in ASP.NET Core today. In that case, I''ll discuss,
+
+    What is the Repository Pattern?
+    Non-generic and Generic Repository Pattern
+    What is the Unit of Work (UoW)?
+    Benefits of UoW
+    How to implement the unit of work with repository pattern in ASP.NET Core Web API
+
+1. What is the Repository Pattern?
+
+The repository pattern creates the abstraction layer between database access and business logic. In that case, Instead of writing the entire data access logic on the controller, it''s better to write it in a different class called a repository.
+
+I already discussed the repository pattern with basic implementation in the below article.
+Create ASP.NET Core CRUD Web API with the Repository pattern
+Hi all, Hope all are doing well!. So In the last articles, I showed you how to create CI/CD pipeline for ASP.NET Web…
+
+malshikay.medium.com
+2. Non-Generic and Generic Repository Pattern
+
+Non-Generic Repository Pattern
+
+All database actions related to a given entity are defined using the non-generic repository pattern within a separate class. For Example, suppose we have two entities (Ex-Student and Employee ). In that case, we will create two repositories for each entity with the basic CRUD operations and other operations related to each entity.
+
+Generic Repository Pattern
+
+The generic repository pattern is used to provide common database operations for all database entities in a single class, such as CRUD operations and so on. First, I''ll show how to implement the generic repository pattern with the Example.
+3. What is the Unit of Work (UoW)?
+
+The Unit of Work is a type of business transaction, and it will aggregate all Repository transactions (CRUD) into a single transaction. Only one commit will be made for all modifications. If any transaction fails to assure data integrity, it will be rolled back. Because it does not block any data table until it commits the modifications, the Unit of Work is commonly referred to as a lazy evaluation transaction.
+
+The above code example seems to be fine. But the issue will arise when we add another repository for another entity like this repository. For Example, if we add the repository for the Customer entity, we have to maintain its instance of DbContext. Then these repositories will maintain their instance of DbContext. This could lead to problems if each DbContext has its in-memory list of updates to entity records. In this situation, if one repository''s SaveChanges fails while the other succeeds, database inconsistency will arise. This is where the UnitOfWork concept comes into play.
+High level of UoW and Repository Pattern
+
+Also, You can see the high-level view of the Unit of Work and Repository pattern in the above figure.
+4. Benefits of Unit Of Work (UoW)
+
+    Reduce the Duplicate queries and codes
+    Could increase the loosely couple with DI in the application
+    Easy to do unit testing or test-driven development (TDD)
+    Increase the abstraction level and maintain the business logic separately.
+
+5. How to implement the unit of work with repository pattern in ASP.NET Core Web API
+
+First, we need to create an ASP.NET Core Web API project. I am not explaining how to create it here. Then run it and check the project.
+
+Then we need to install the required packages for use to SQL server and entity framework core. In that case, you could navigate to Nuget package manager and then install the required packages into our solution.
+
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Sqlite
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore
+
+Then remove the boilerplate code that has been created when creating the project (WeatherForecast.cs, Controller/WeatherForecastController.cs) after we need to modify the appsettings.json file to add the connection string of our database. So, It''s a small task, and it''s up to you.
+
+In here, I follow the code-first approach in EF core to create and manage our database. In that case, we need to create a Model (Entity) class. So, first, create the folder called Models in the root directory and then create the Employee model class inside the Model folder as below code.
+
+Then we need to create DbContext for our application. In that case, Create a folder called Data in the root directory and then create DBContext class which implement the DbContext as below code and also need to our Employee model class into DbContext as below code.
+
+You can see the DbContext class with the above code. In that code, the OnModelCreating method provides the ability for us to manage the table properties of the tables in the database. As well, we add our Employee model class. In that case, the DbSet property will help to create the table which adds with it by using the EF Core.
+
+Then we have to create our database. In that case, navigate to the package manager console of visual studio and then use the following commands to create the database. First, enter the add-migration to create the migration by adding the migration snapshot and then enter update-database to create and update the database by using the last migration snapshot.
+
+add-migration initialMigration
+update-database
+
+Now we created our database with our ASP.NET Core Web API project.
+
+Now we have to implement the repository pattern. In that case, I follow the generic repository pattern to create the repository pattern for our project. First, we need to create a folder called services in the root directory and then create the IGenericRepository interface inside the service folder as the following code.
+
+I explained the Generic repository above. Here, T is a specific class, and the functions will depend on our requirements and preference. In this case, I added 6 functions that are commonly used on other repositories.
+
+Now implement this IGenericRepository. Create a new class called GenericRepository, which implements IGenericRepository inside the services folder as following code.
+
+This class will implement the IGenericRepository Interface. The DBContext also will be injected here. In this approach, all operations connected to the dbContext object are hidden within Repository Classes. However, we have not yet committed/updated/saved the database modifications in any way. This is something that should not be done in a Repository Class. We''ll discuss that with the Unit of Work.
+
+Now we have to create an interface called IEmployeeRepository.
+
+Here, We need to inherit IGenericRepository and add the new functions related to IEmployeeRepository. For Example, we could add the functions called GetEmployeeAttendance() because it''s not a common operation that is not suitable for the IGenericRepository.
+
+Now we have to implement this IEmployeeRepository. Create a class called UserRepository inside the services folder as the following code.
+
+In here, We implement the Employee Repository by inhering the IGenericRepository and IEmployeeRespository. In that case, we could override functions that do not implement the database logic with the Generic Repository and then could add the operations for that functions as above code.
+
+Now we have to implement the Unit of Work in our project. Basically, I explained what unit of work in the above section is. Now we have to learn it with the Example.
+
+In that case, I create the Configuration folder in the root directory of the project folder. Then we need to create the IUnitOfWork interface inside the configuration folder as following code.
+
+Now we have built one repository with the Generic Repository pattern. We could inject the repositories that we implement in our project and then could access the data. But when we have a lot of repositories, we need to inject all of them. It''s not good practice. In that case, we could use the unit of work to wrap all the repositories into a single object.
+
+The Unit of Work is in control of exposing the relevant Repositories and Committing Changes to the DataSource in order to ensure a complete transaction with no data loss.
+
+Now we have to implement this interface. In that case, create UnitOfWork class inside the configuration folder as the following code.
+
+We are injecting the DBContext and ILogger and implementing the CompleteAsync and the Dispose functions to use when the commit/update/remove operations with the database were.
+
+Now navigate to startup class and need to register IUnitOfWork interface in our project as follows.
+
+// Adding the Unit of work to the DI containerservices.AddScoped<IUnitOfWork, UnitOfWork>();
+
+We have only to register IUnitOfWork. We don''t need to register other repositories as we are doing in the basic repository pattern. Because we inject all of the repositories in the IUnitOfWork, then we could access them through it.
+
+Then we have to implement the controller in our project. In that case, We have to create the controller called EmployeeController inside the Controllers folder, as below code.
+
+We inject the IUnitOfWork as the object in this controller. Then we have to use the unit of work to add the services and logic to the related methods in this controller.
+
+Now we have to run this project. And then we could access our ASP.NET Core Web API as below figure.
+Run the Web API project
+
+So, We run our web API project successfully and If you need the project that we implement, you could get it with this GitHub Repository.
+
+We discuss some points such as Repository pattern, Non-Generic and Generic repository pattern, Unit Of Work and its benefits, and how to implement a unit of work with the repository pattern in the ASP.NET Core Web API project to get the basic idea about it with this article.
+
+So That''s it for today. I hope you learned something new from my article.
+
+See you again soon with another article !!
+', N'How to Implement a Unit Of Work with Repository Pattern in ASP.NET Core Web API', 1635406513565, N'201F433E-F36B-1410-8934-008CAF34AFE2', N'A06F433E-F36B-1410-8345-00D1D56254E8', null, 0, N'C633433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'0934433E-F36B-1410-894F-008CAF34AFE2', N'AF30433E-F36B-1410-894F-008CAF34AFE2', null, N'Multithreading in Java', N'## What is Single Thread?
+A single thread in Java is basically a lightweight and the smallest unit of processing. Java uses threads by using a “Thread Class”.
+
+There are two types of thread – user thread and daemon thread (daemon threads are used when we want to clean the application and are used in the background).
+
+When an application first begins, user thread is created. Post that, we can create many user threads and daemon threads.
+
+### Advantages of single thread:
+- Reduces overhead in the application as single thread execute in the system
+- Also, it reduces the maintenance cost of the application.
+
+## What is Multithreading in Java?
+Multithreading in Java is a process of executing two or more threads simultaneously to maximum utilization of CPU. Multithreaded applications execute two or more threads run concurrently. Hence, it is also known as Concurrency in Java. Each thread runs parallel to each other. Mulitple threads don’t allocate separate memory area, hence they save memory. Also, context switching between threads takes less time.
+
+### Advantages of multithread:
+- The users are not blocked because threads are independent, and we can perform multiple operations at times
+- As such the threads are independent, the other threads won’t get affected if one thread meets an exception.
+
+### Thread Life Cycle in Java
+The Lifecycle of a thread:
+![Multithreading](https://cdn.guru99.com/images/4-2016/042616_0819_Multithread1.png)', N'Basic knowledge about multithreading in Java ', 1635406714265, N'371F433E-F36B-1410-8934-008CAF34AFE2', N'C46F433E-F36B-1410-8345-00D1D56254E8', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1635406775155, N'4233433E-F36B-1410-894F-008CAF34AFE2', null);
+INSERT INTO FPTUBlog.dbo.blog (id, author_id, thumbnail_url, title, content, description, created_datetime, status_id, category_id, reviewer_id, review_datetime, blog_history_id, avg_rate) VALUES (N'3F34433E-F36B-1410-894F-008CAF34AFE2', N'3095433E-F36B-1410-894D-008CAF34AFE2', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fmicro-service-1-1024x629-1.png?alt=media&token=8dc44c62-e21b-48b2-8f7b-68f2718a2dc5', N'What Is Microservice Architecture? Microservices Explained', N'at Is Microservice Architecture? Microservices Explained
+
+Microservice architecture, aka microservices, are a specific method  of designing software systems to structure a single application as a  collection of loosely coupled services. Applications tend to begin as a  monolithic architecture (more on that below), and over time grow into a  set of interconnected microservices.
+
+The main idea behind microservices is that some types of applications are easier to build and maintain when they are broken down into many  small pieces that work together. Though the architecture has increased  complexity, microservices still offer many advantages over the  monolithic structure.
+
+The concept of *micro* stems from the existing monolithic  infrastructure most companies came up using, especially if the company  has been around for a decade or longer. Instead of a monolithic  architecture, each component of a microservice architecture has:
+
+- Its own CPU
+- Its own runtime environment
+- Often, a dedicated team working on it, ensuring each service is distinct from one another
+
+This architecture means each service can:
+
+- Run its own unique process
+- Communicate autonomously without having to rely on the other microservices or the application as a whole
+
+This ability to be separated and recombined protects the entire system against decay and better facilitates [agile processes](https://www.bmc.com/blogs/agile-vs-waterfall/), making it appealing to organizations—especially those still utilizing monolithic infrastructures.
+
+This article will cover:
+
+- [How microservices work](https://www.bmc.com/blogs/microservices-architecture/#_How_microservices_works)
+- [Examples](https://www.bmc.com/blogs/microservices-architecture/#_Examples_of_microservices)
+- [Monolithic vs microservice architectures](https://www.bmc.com/blogs/microservices-architecture/#_Monolithic_architecture_vs)
+- [Pros](https://www.bmc.com/blogs/microservices-architecture/#_Advantages_to_Microservices) & [cons](https://www.bmc.com/blogs/microservices-architecture/#_Disadvantages_of_microservices) of microservices
+- [Helpful resources](https://www.bmc.com/blogs/microservices-architecture/#_Related_reading)
+
+## How microservices works
+
+Microservices are a set of services that act together to make a whole application operate. This architecture utilizes APIs to pass  information, such as user queries or a [data stream](https://www.bmc.com/blogs/data-streaming/), from one service to another.
+
+How the underlying software works, or which hardware the service is  built upon, depends solely on the team who built the service. This makes both communicating between teams and upgrading services very  dynamic—even reactive—allowing a software company or team to be [more resilient](https://www.bmc.com/blogs/resiliency-vs-redundancy/) in its development.
+
+[Kubernetes](https://www.bmc.com/blogs/what-is-kubernetes/) has helped advance the cause of microservices, though it not a necessary building block. The rise of [cloud computing](https://www.bmc.com/blogs/public-private-hybrid-cloud/) and networked computers has done two things:
+
+- Removed the responsibility from the user needing to have a powerful computer to run all the necessary operations.
+- Places the responsibility on the company to use individual servers to run its service each time a user runs the application.
+
+In the case of microservices, the user’s machine may be responsible  for basic processing, but it is mostly responsible for sending and  receiving network calls to other computers.
+
+Whenever you use an  application, it’s reasonable to assume that there are five other  computers, give or take, that just turned on in order to power your  experience. In the case of something like Facebook or Uber, it may be  more reasonable to expect another 10,000 computers are actively  processing information to enhance the user experience.
+
+Microservices are often considered a logical evolution of [Service Oriented Architecture (SOA)](https://www.bmc.com/blogs/service-oriented-architecture-overview/), but there are [clear differences](https://www.bmc.com/blogs/microservices-vs-soa-whats-difference/) between the two.
+
+## Examples of microservices architecture
+
+As Martin Fowler [points out](https://martinfowler.com/articles/microservices.html), many large companies now utilize microservices within their  architecture. Netflix is one of the earlier, most well-known adopters.  Some other well-known examples are:
+
+- eBay
+- Amazon
+- Twitter
+- PayPal
+- SoundCloud
+- Gilt
+- The Guardian
+
+ 
+
+Present in each of these companies are a network of microservices.
+
+For example, SoundCloud might have a new user microservice designed  to onboard a user onto its application. The microservice will activate  the user’s account on the backend, and it might be responsible for  sending a welcome email to the user, and a walkthrough when the user  first logs into the application.
+
+Another microservice for Soundcloud might be to handle uploading and  storing a user’s song to the platform. Another might be its search  functionality and recommended artists.
+
+As a company is divided into departments with people having different responsibilities, like a sales agent, a financier, and a bank teller  are all points of contact with the same bank, a company’s microservices  divide the responsibility of the whole company into individual actions.
+
+The difference between this  microservice design and a monolith is that Soundcloud does not have one  single application to handle each of these parts, released in the spring of each year and distributed on a CD-ROM, for example. Instead, each  part (microservice):
+
+- Works autonomously to contribute to the whole
+- Can be upgraded in the modern way of [continuous development and integration (CI/CD)](https://www.bmc.com/blogs/what-is-ci-cd/)
+
+*(Explore* [*microservices best practices*](https://www.bmc.com/blogs/microservices-best-practices/) *that will help you get up and running successfully.)*
+
+## Monolithic architecture vs microservice architecture
+
+The monolithic architecture pattern has been the architectural style used in the past, pre-Kubernetes and cloud services days.
+
+In a monolithic architecture, the software is a single application  distributed on a CD-ROM, released once a year with the newest updates.  Examples are Photoshop CS6 or Microsoft 2008.
+
+![monolithic vs microservices architecture](https://s7280.pcdn.co/wp-content/uploads/2018/10/key1-1024x496.jpg.optimal.jpg)
+
+That style was the standard way of building software. But as tech has evolved, so too the architectural style must advance. In an age of  Kubernetes, and CI/CD workflows, the monolithic architecture encounters  many limitations—companies need to push to microservices.
+
+Characteristics of a monolithic architecture:
+
+- Changes are slow
+- Changes are costly
+- Hard to adapt to a specific, or changing, product line
+
+Monolithic structures make  changes to the application extremely slow. Modifying just a small  section of code can require a completely rebuilt and deployed version of software.
+
+*(Learn about the* *complexities of* [*app modernization*](https://www.bmc.com/blogs/application-software-modernization/) *and* [*code refactoring*](https://www.bmc.com/blogs/code-refactoring-explained/)*.)*
+
+If developers wish to scale certain functions of an application, they must scale the entire application, further complicating changes and  updates. Microservices help to solve these challenges.
+
+## Advantages to Microservices
+
+Applications built as a set of independent, modular components are  easier to test, maintain, and understand. They enable organizations to:
+
+- Increase agility', N'Microservice architecture, aka microservices, are a specific method  of designing software systems to structure a single application as a  collection', 1635409888875, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'A06F433E-F36B-1410-8345-00D1D56254E8', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1635409999651, N'3C34433E-F36B-1410-894F-008CAF34AFE2', 5);

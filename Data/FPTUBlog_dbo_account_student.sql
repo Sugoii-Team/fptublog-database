@@ -1,1 +1,3 @@
-INSERT INTO FPTUBlog.dbo.account_student (id, school_year, major_id, experience_point) VALUES (N'9946433E-F36B-1410-8937-008CAF34AFE2', 15, N'EE1E433E-F36B-1410-8934-008CAF34AFE2', 0);
+INSERT INTO FPTUBlog.dbo.account_student (id, school_year, major_id, experience_point) VALUES (N'9946433E-F36B-1410-8937-008CAF34AFE2', 15, N'EE1E433E-F36B-1410-8934-008CAF34AFE2', 2365);
+INSERT INTO FPTUBlog.dbo.account_student (id, school_year, major_id, experience_point) VALUES (N'3095433E-F36B-1410-894D-008CAF34AFE2', 15, N'EE1E433E-F36B-1410-8934-008CAF34AFE2', 1210);
+INSERT INTO FPTUBlog.dbo.account_student (id, school_year, major_id, experience_point) VALUES (N'AF30433E-F36B-1410-894F-008CAF34AFE2', 0, N'EE1E433E-F36B-1410-8934-008CAF34AFE2', 0);
