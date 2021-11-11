@@ -2,28 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$USER_HOME$/Code/Northwind DB/northwindmysql.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_account.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_account_lecturer.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_account_lecturer_field.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_account_status.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_account_student.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_admin.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_award.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_blog.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_blog_history.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_blog_rate.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_blog_status.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_blog_tag.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_category.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_comment.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_comment_status.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_field.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_lecturer_student_award.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_major.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_notification.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_rate.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_tag.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_vote.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/FPTUBlog.sql" dialect="TSQL" />
   </component>
 </project>
