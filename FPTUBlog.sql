@@ -1,7 +1,7 @@
-CREATE DATABASE FPTUBlogV2
+CREATE DATABASE FPTUBlog
 GO
 
-USE FPTUBlogV2
+USE FPTUBlog
 GO
 
 CREATE TABLE major
@@ -172,7 +172,7 @@ CREATE TABLE lecturer_student_award
     lecturer_id UNIQUEIDENTIFIER FOREIGN KEY REFERENCES account_lecturer (id),
     student_id  UNIQUEIDENTIFIER FOREIGN KEY REFERENCES account_student (id),
     award_id    UNIQUEIDENTIFIER FOREIGN KEY REFERENCES award (id),
-    CONSTRAINT unique_lecturerId_studentId_awardId UNIQUE (lecturer_id, student_id, award_id),
+    datetime    BIGINT NOT NULL,
 )
 
 CREATE TABLE admin

@@ -1,0 +1,16 @@
+INSERT INTO major (id, name) VALUES (N'340A433E-F36B-1410-8935-008CAF34AFE2', N'Artificial Intelligence');
+INSERT INTO major (id, name) VALUES (N'350A433E-F36B-1410-8935-008CAF34AFE2', N'Digital Art & Design');
+INSERT INTO major (id, name) VALUES (N'3A0A433E-F36B-1410-8935-008CAF34AFE2', N'Digital Marketing');
+INSERT INTO major (id, name) VALUES (N'A30A433E-F36B-1410-8935-008CAF34AFE2', N'English Language');
+INSERT INTO major (id, name) VALUES (N'8B0A433E-F36B-1410-8935-008CAF34AFE2', N'Finance');
+INSERT INTO major (id, name) VALUES (N'B70A433E-F36B-1410-8935-008CAF34AFE2', N'Graphic Design');
+INSERT INTO major (id, name) VALUES (N'8E0A433E-F36B-1410-8935-008CAF34AFE2', N'Hotel Management');
+INSERT INTO major (id, name) VALUES (N'320A433E-F36B-1410-8935-008CAF34AFE2', N'Information Assurance');
+INSERT INTO major (id, name) VALUES (N'AD0A433E-F36B-1410-8935-008CAF34AFE2', N'Information system');
+INSERT INTO major (id, name) VALUES (N'910A433E-F36B-1410-8935-008CAF34AFE2', N'International Business');
+INSERT INTO major (id, name) VALUES (N'A80A433E-F36B-1410-8935-008CAF34AFE2', N'Internet of things');
+INSERT INTO major (id, name) VALUES (N'B20A433E-F36B-1410-8935-008CAF34AFE2', N'Japanese Language');
+INSERT INTO major (id, name) VALUES (N'990A433E-F36B-1410-8935-008CAF34AFE2', N'Marketing');
+INSERT INTO major (id, name) VALUES (N'940A433E-F36B-1410-8935-008CAF34AFE2', N'Multimedia communication');
+INSERT INTO major (id, name) VALUES (N'EE1E433E-F36B-1410-8934-008CAF34AFE2', N'Software Engineering');
+INSERT INTO major (id, name) VALUES (N'9E0A433E-F36B-1410-8935-008CAF34AFE2', N'Tourism and Travel Management');
