@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$USER_HOME$/Code/Northwind DB/northwindmysql.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/Code/Review DB/northwindmysql.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_account.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_account_lecturer.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_account_lecturer_field.sql" dialect="TSQL" />
@@ -19,5 +19,6 @@
     <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_rate.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/Data/FPTUBlog_dbo_tag.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/FPTUBlog.sql" dialect="TSQL" />
+    <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
