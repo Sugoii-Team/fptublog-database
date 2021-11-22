@@ -1,4 +1,4 @@
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'C2D4423E-F36B-1410-8F48-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fdownload.jpg?alt=media&token=d35045a1-d3ad-48cb-aa3d-69c96c9f5d0a', N'What is Software Testing? ', N'Software Testing is a method to check whether the actual software product matches expected requirements and to ensure that software product is Defect free. It involves execution of software/system components using manual or automated tools to evaluate one or more properties of interest. The purpose of software testing is to identify errors, gaps or missing requirements in contrast to actual requirements.
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'C2D4423E-F36B-1410-8F48-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fdownload.jpg?alt=media&token=d35045a1-d3ad-48cb-aa3d-69c96c9f5d0a', N'What is Software Testing? ', N'Software Testing is a method to check whether the actual software product matches expected requirements and to ensure that software product is Defect free. It involves execution of software/system components using manual or automated tools to evaluate one or more properties of interest. The purpose of software testing is to identify errors, gaps or missing requirements in contrast to actual requirements.
 
 Some prefer saying Software testing definition as a White Box and Black Box Testing. In simple terms, Software Testing means the Verification of Application Under Test (AUT). This Software Testing course introduces testing software to the audience and justifies the importance of software testing.
 Why Software Testing is Important?
@@ -18,7 +18,7 @@ China Airlines Airbus A300 crashed due to a software bug on April 26, 1994, kill
 In 1985, Canada’s Therac-25 radiation therapy machine malfunctioned due to software bug and delivered lethal radiation doses to patients, leaving 3 people dead and critically injuring 3 others.
 In April of 1999, a software bug caused the failure of a $1.2 billion military satellite launch, the costliest accident in history
 In May of 1996, a software bug caused the bank accounts of 823 customers of a major U.S. bank to be credited with 920 million US dollars.', N'Software Testing is a method to check whether the actual software product matches expected requirements', 1636564921820, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1636599924682, N'BFD4423E-F36B-1410-8F48-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'EAEB423E-F36B-1410-8F49-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2F1200px-Simple_gold_crown.svg.png?alt=media&token=38780741-5688-450b-b314-87f595ba74ff', N'Software Requirements', N'Requirement Engineering
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'EAEB423E-F36B-1410-8F49-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2F1200px-Simple_gold_crown.svg.png?alt=media&token=38780741-5688-450b-b314-87f595ba74ff', N'Software Requirements', N'Requirement Engineering
 The process to gather the software requirements from client, analyze and document them is known as requirement engineering.
 
 The goal of requirement engineering is to develop and maintain sophisticated and descriptive ‘System Requirements Specification’ document.
@@ -58,7 +58,7 @@ Technical requirements are expressed in structured language, which is used insid
 Design description should be written in Pseudo code.
 Format of Forms and GUI screen prints.
 Conditional and mathematical notations for DFDs etc.', N'The software requirements are description of features and functionalities of the target system.', 1636571023202, N'261F433E-F36B-1410-8934-008CAF34AFE2', null, 1636572414596, N'E5EB423E-F36B-1410-8F49-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'8A5F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fsdkman.png?alt=media&token=c25e52bc-9e87-4472-a50b-b9d719505b63', N'Install Multiple Versions of Java with SDKMAN', N'## What is SDKMAN?
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'8A5F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fsdkman.png?alt=media&token=c25e52bc-9e87-4472-a50b-b9d719505b63', N'Install Multiple Versions of Java with SDKMAN', N'## What is SDKMAN?
 
 ------
 
@@ -229,8 +229,8 @@ sdkman_auto_env=true|false
 
 ---
 
-[SDKMAN!](https://sdkman.io/)', N'SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits. This is very useful for managing Java versions as well as Gradle, Maven etc..', 1636599169469, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1636599928896, N'875F433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'9B5F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2F50594Moby-logo.png?alt=media&token=78ce9b9a-a2e1-401a-a11c-96d9a891bb11', N'A Complete Guide on Docker for Beginners', N'***\*This article was published as a part of the [Data Science Blogathon](https://datahack.analyticsvidhya.com/contest/data-science-blogathon-12/)\****
+[SDKMAN!](https://sdkman.io/)', N'SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits. This is very useful for managing Java versions as well as Gradle, Maven etc..', 1636599169469, N'2C1F433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1637469753748, N'875F433E-F36B-1410-8F4A-00ECC295C0E9');
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'9B5F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2F50594Moby-logo.png?alt=media&token=78ce9b9a-a2e1-401a-a11c-96d9a891bb11', N'A Complete Guide on Docker for Beginners', N'***\*This article was published as a part of the [Data Science Blogathon](https://datahack.analyticsvidhya.com/contest/data-science-blogathon-12/)\****
 
 ## Introduction
 
@@ -641,7 +641,7 @@ I hope you find this article helpful. Please feel free to share it. Thank you, h
 - Image 1: https://hub.docker.com/
 - Image 2: www.docker.com
 - Image 3: https://docs.docker.com/v17.12/engine/docker-overview', N'It is not difficult to create a machine learning model that operates on our computers.', 1636599315539, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1636599942796, N'945F433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'AD5F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FR.jpeg?alt=media&token=5b494866-b884-4c45-9cba-28d20fad3bf2', N'REST (Representational state transfer) Architecture Style', N'## REST
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'AD5F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FR.jpeg?alt=media&token=5b494866-b884-4c45-9cba-28d20fad3bf2', N'REST (Representational state transfer) Architecture Style', N'## REST
 
 REST là một tập các nguyên lí, ràng buộc về architectural style, không phải là protocol hay standard, vậy nên ta có thể implements nó theo rất nhiều cách khác nhau. REST được đề ra bởi Dr. Roy Fielding trong [Luận văn tiến sĩ](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) của mình vào năm 2000.
 
@@ -763,7 +763,7 @@ Thực tế, Roy Fielding không đề cập việc phải sử dụng HTTP meth
 - [https://www.redhat.com/en/topics/api/what-is-a-rest-api](https://www.redhat.com/en/topics/api/what-is-a-rest-api)
 - [https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/](https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/)
 - [https://medium.com/@mwaysolutions/10-best-practices-for-better-restful-api-cbe81b06f291](https://medium.com/@mwaysolutions/10-best-practices-for-better-restful-api-cbe81b06f291)', N'REST là một tập các nguyên lí, ràng buộc về architectural style, không phải là protocol hay standard, vậy nên ta có thể implements nó theo rất nhiều cách khác nhau.', 1636599546938, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1636599918492, N'A95F433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'CD5F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Findex.jpg?alt=media&token=570b7d49-90a1-47bc-b06d-333c871d8e37', N'A modern, fast, web framework for building APIs with Python', N'![](https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'CD5F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Findex.jpg?alt=media&token=570b7d49-90a1-47bc-b06d-333c871d8e37', N'A modern, fast, web framework for building APIs with Python', N'![](https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)
 
  Test Coverage Package version
 
@@ -1113,7 +1113,7 @@ This project is licensed under the terms of the MIT license.
 GitHub
 
 https://github.com/tiangolo/fastapi''', N'FastAPI framework, high performance, easy to learn, fast to code, ready for production', 1636599789100, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1636599936223, N'CC5F433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'E65F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Findex.png?alt=media&token=da6349da-230a-446f-9aad-1acb8e9b19d4', N'How to Use ngrok?', N'In this article, let’s talk about ngrok and how it can be used to create a secure tunnel to your local machine where you are able to share your localhost server with anyone at any time.
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'E65F433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Findex.png?alt=media&token=da6349da-230a-446f-9aad-1acb8e9b19d4', N'How to Use ngrok?', N'In this article, let’s talk about ngrok and how it can be used to create a secure tunnel to your local machine where you are able to share your localhost server with anyone at any time.
 
 A real case scenario where you can use this could be for an interview where you can share your localhost with the interview panel and they can see the changes you make in real-time.
 What is ngrok?
@@ -1141,7 +1141,7 @@ Commercial options start from $5 per month, providing further connections and cu
 On the upcoming blog let’s see how to implement this practically 😉
 
 Happy learning!'', N''Using ngrok to Share Your Local Server', N'Using ngrok to Share Your Local Server with the interview panel and they can see the changes you make in real-time.', 1636600126075, N'201F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'E15F433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'F85F433E-F36B-1410-8F4A-00ECC295C0E9', null, N'What Is Microservice Architecture? Microservices Explained', N'What Is Microservice Architecture? Microservices Explained
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'F85F433E-F36B-1410-8F4A-00ECC295C0E9', null, N'What Is Microservice Architecture? Microservices Explained', N'What Is Microservice Architecture? Microservices Explained
 
 Microservice architecture, aka microservices, are a specific method  of designing software systems to structure a single application as a  collection of loosely coupled services. Applications tend to begin as a  monolithic architecture (more on that below), and over time grow into a  set of interconnected microservices.
 
@@ -1241,7 +1241,7 @@ If developers wish to scale certain functions of an application, they must scale
 Applications built as a set of independent, modular components are  easier to test, maintain, and understand. They enable organizations to:
 
 - Increase agility''', N'Microservice architecture, aka microservices, are a specific method  of designing software systems to structure a single application as a  collection', 1636600331525, N'201F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'F35F433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'1860433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fdownload.jfif?alt=media&token=d9f01ae2-a115-4bd3-9cd1-beb7732da759', N'Async in depth ( .NET )', N'
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'1860433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fdownload.jfif?alt=media&token=d9f01ae2-a115-4bd3-9cd1-beb7732da759', N'Async in depth ( .NET )', N'
 Task and Task<T>
 Tasks are constructs used to implement what is known as the Promise Model of Concurrency. In short, they offer you a "promise" that work will be completed at a later point, letting you coordinate with the promise with a clean API.
 
@@ -1359,7 +1359,7 @@ Once await is encountered, the execution of CalculateResult() is yielded to its 
 
 Why does async help here?
 async and await are the best practice for managing CPU-bound work when you need responsiveness. There are multiple patterns for using async with CPU-bound work. It''s important to note that there is a small cost to using async and it''s not recommended for tight loops. It''s up to you to determine how you write your code around this new capability.', N'NET async and provides insight into the async framework used under the covers.', 1636601473793, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'BB0A433E-F36B-1410-8935-008CAF34AFE2', 1636601501562, N'EA5F433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'2060433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fgithub.png?alt=media&token=09297eeb-6937-4310-9c84-7200ad0638bc', N'GitHub là gì? Những lợi ích GitHub mang lại cho lập trình viên', N'### Github là gì?
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'2060433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fgithub.png?alt=media&token=09297eeb-6937-4310-9c84-7200ad0638bc', N'GitHub là gì? Những lợi ích GitHub mang lại cho lập trình viên', N'### Github là gì?
 GitHub là một dịch vụ nổi tiếng cung cấp kho lưu trữ mã nguồn Git cho các dự án phần mềm. Github có đầy đủ những tính năng của Git, ngoài ra nó còn bổ sung những tính năng về social để các developer tương tác với nhau.
 * Là công cụ giúp quản lý source code tổ chức theo dạng dữ liệu phân tán.
 * Giúp đồng bộ source code của team lên 1 server.
@@ -1385,7 +1385,7 @@ Có 2 cách tiếp cận GitHub: Tạo project của riêng mình Contribute cho
 ###Lịch sử của GitHub
 GitHub được viết bằng Ruby on Rails và Erlang do Tom Preston-Werner, Chris Wanstrath, và PJ Hyett phát triển trang web được đưa ra và chạy chính thức vào tháng 4 năm 2008.
 Tính đến thời điểm tháng 3 năm 2018 Github đang là dịch vụ máy chủ lưu trữ các mã nguồn lập trình lớn nhất thế giới. Với hơn 25 triệu người dùng và hơn 80 triệu mã nguồn dự án, Github đã trở thành một phần không thể thiêu đối với cộng đồng phát triển mã nguồn mở và cộng đồng lập trình viên trên toàn thế giới.', N'what is github ?', 1636604533349, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1636605234664, N'1C60433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'6260433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fspring-logo.png?alt=media&token=f4d54467-476a-439a-83ff-5e7afba4cc7a', N'Spring là gì? Giới thiệu Spring Framework trong Java', N'## 1. Spring là gì?
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'6260433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fspring-logo.png?alt=media&token=f4d54467-476a-439a-83ff-5e7afba4cc7a', N'Spring là gì? Giới thiệu Spring Framework trong Java', N'## 1. Spring là gì?
 Spring là một Framework phát triển các ứng dụng Java được sử dụng bởi hàng triệu lập trình viên. Nó giúp tạo các ứng dụng có hiệu năng cao, dễ kiểm thử, sử dụng lại code…
 
 Spring nhẹ và trong suốt (nhẹ: kích thước nhỏ, version cơ bản chỉ khoảng 2MB; trong suốt: hoạt động một cách trong suốt với lập trình viên)
@@ -1445,8 +1445,8 @@ Spring Cloud
 Spring Mobile
 Spring for Android
 Spring Session
-', N'Đảng đã cho ta 1 mùa xuân đầy khát vọng ', 1636608988768, N'201F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'5D60433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'7E60433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fapi-la-gi-web-api.jpg?alt=media&token=c4933259-dc77-48d7-9aca-69c65a6b0ff0', N'API and Web API ', N'## API là gì?
+', N'Đảng đã cho ta 1 mùa xuân đầy khát vọng ', 1636608988768, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'EFF3423E-F36B-1410-894A-008CAF34AFE2', 1636879595819, N'5D60433E-F36B-1410-8F4A-00ECC295C0E9');
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'7E60433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fapi-la-gi-web-api.jpg?alt=media&token=c4933259-dc77-48d7-9aca-69c65a6b0ff0', N'API and Web API ', N'## API là gì?
 API là các phương thức, giao thức kết nối với các thư viện và ứng dụng khác. Nó là viết tắt của Application Programming Interface – giao diện lập trình ứng dụng. API cung cấp khả năng cung cấp khả năng truy xuất đến một tập các hàm hay dùng. Và từ đó có thể trao đổi dữ liệu giữa các ứng dụng.
 ![](https://topdev.vn/blog/wp-content/uploads/2019/06/API-696x364.png)
 ## API thường ứng dụng vào đâu?
@@ -1506,7 +1506,7 @@ Có thể gặp vấn đề về bảo mật khi hệ thống bị tấn công n
 Lời khuyên tiếp theo là bạn nên đọc thêm các bài ở dưới đây để cập nhật toàn bộ kiến thức về API:
 
 ', N'Hiện nay API nói chung và Web API nói riêng đang được ứng dụng ngày càng nhiều. Kiến trúc ứng dụng hiện đại ngày nay ngày càng phân tán, không phụ thuộc ngôn ngữ đã thúc đẩy việc ứng dụng API. ', 1636612762517, N'201F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'7B60433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'A460433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fdownload%20(2).jpg?alt=media&token=473167f6-587b-4b66-b3fd-e3e06e897db9', N'RAID là gì? Những điều phải biết về công nghệ RAID', N'# 1. RAID là gì?
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'A460433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fdownload%20(2).jpg?alt=media&token=473167f6-587b-4b66-b3fd-e3e06e897db9', N'RAID là gì? Những điều phải biết về công nghệ RAID', N'# 1. RAID là gì?
 Thuật ngữ RAID là viết tắt của Redundant Array of Inexpensive Disks (hoặc Redundant Arrays of Independent Disks), xuất hiện lần đầu tiên vào cuối những năm 1980. RAID là một kỹ thuật ảo hóa cho phép gom nhiều ổ đĩa cứng vật lý thành một hệ thống ổ đĩa logic nhằm mục đích gia tăng tốc độ truy xuất dữ liệu hoặc giảm nguy cơ mất, hỏng dữ liệu do lỗi đĩa phần cứng gây ra hoặc đôi khi kết hợp cả hai mục đích trên. 
 
 Cách thức hoạt động của RAID là sao chép dữ liệu lên hai hoặc nhiều ổ cứng vật lý được liên kết với nhau bằng 1 RAID Controller. RAID Controller có thể dựa trên một trong 2 nền tảng phần cứng hoặc phần mềm.
@@ -1609,8 +1609,8 @@ Nhờ vậy loại RAID này vẫn đảm bảo tốc độ truy vấn rất t�
 ### Hot spare disks
 Đây là một ổ cứng mà chức năng chính chỉ để sử dụng dự phòng. Khi một ổ cứng trong nhóm Raid bị hư, hệ thống sẽ tự động lấy ổ cứng HotSpare để thay thế vào ổ cứng hư nhằm đảm bảo dữ liệu được bảo vệ tối ưu nhất. Hot spare disk có thể dùng cho 1 cụm raid hoặc có thể dụng share chung cho nhiều cụm raid khác nhau.
 ![](https://techvccloud.mediacdn.vn/280518386289090560/2021/5/4/120illraidspare-1620112356392-1620112356738260262170.png)', N'Vậy Raid là gì? Chức năng của Raid nhằm mục đích gì? Có những loại Raid nào? Ưu và nhược điểm của từng loại? Đối với từng đối tượng dịch vụ cụ thể thì nên sử dụng Raid gì là tối ưu?', 1636613692650, N'201F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'A360433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'1561433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FdatAntibonk.png?alt=media&token=626f1f55-a7be-439f-8d01-136b0cc5c364', N'Utilities for controlling how flex and grid items', N'Utilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid items', N'Utilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid items', 1636622741732, N'2C1F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1636642113412, N'0E61433E-F36B-1410-8F4A-00ECC295C0E9');
-INSERT INTO blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'C4CC423E-F36B-1410-8F4C-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fsystemdesign.png?alt=media&token=ffd3c300-8d05-46d8-bd46-1cef25e06789', N'SYSTEM DESIGN', N'Sau giai đoạn đó, sẽ đến giai đoạn mình được assign để design kiến trúc cho cả một hệ thống. Như thường lệ, như một sự may mắn khi tìm hiểu trên Google, ta sẽ tiếp cận được với rất nhiều tài liệu nói về Software Architecture như Clean Architecture hoặc như series bài viết của mình về Architecture ngay từ những ngày đầu tìm hiểu. Chung quy, software architecture cũng giống như những high level pattern để giải quyết những bài toán ở cấp độ cao hơn so với design pattern, vốn ta sẽ liên tưởng ngay đến coding. Những khái niệm như Microservices, Domain Driven Design, Cloud Computing cũng dần dần xuất hiện. Các khái niệm về High Availability, scalability, Reliability, Security ngày càng trở nên quan trọng trong việc thiết kế bất cứ sản phẩm nào.
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'1561433E-F36B-1410-8F4A-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FdatAntibonk.png?alt=media&token=626f1f55-a7be-439f-8d01-136b0cc5c364', N'Utilities for controlling how flex and grid items', N'Utilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid items', N'Utilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid itemsUtilities for controlling how flex and grid items', 1636622741732, N'2C1F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1636642113412, N'0E61433E-F36B-1410-8F4A-00ECC295C0E9');
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'C4CC423E-F36B-1410-8F4C-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fsystemdesign.png?alt=media&token=ffd3c300-8d05-46d8-bd46-1cef25e06789', N'SYSTEM DESIGN', N'Sau giai đoạn đó, sẽ đến giai đoạn mình được assign để design kiến trúc cho cả một hệ thống. Như thường lệ, như một sự may mắn khi tìm hiểu trên Google, ta sẽ tiếp cận được với rất nhiều tài liệu nói về Software Architecture như Clean Architecture hoặc như series bài viết của mình về Architecture ngay từ những ngày đầu tìm hiểu. Chung quy, software architecture cũng giống như những high level pattern để giải quyết những bài toán ở cấp độ cao hơn so với design pattern, vốn ta sẽ liên tưởng ngay đến coding. Những khái niệm như Microservices, Domain Driven Design, Cloud Computing cũng dần dần xuất hiện. Các khái niệm về High Availability, scalability, Reliability, Security ngày càng trở nên quan trọng trong việc thiết kế bất cứ sản phẩm nào.
 
 Những lần được phân công làm pre-sales cùng các “chuyên gia”, có cả dân sale lẫn dẫn senior technical architect lẫn solution architect đã giúp mình ngày càng mở mang tầm mắt.
 
@@ -1641,4 +1641,214 @@ Components – This provides a particular function or group of related functions
 Interfaces – This is the shared boundary across which the components of a the system exchange information and relate.
 Data – This the management of the information and data flow.
 vân vân, mây mây..', N'Đôi lời tản mạn.
-Cuộc đời 1 lập trình viên từ khi bắt đầu với các dòng code, tập tành viết unit test rồi cơ duyên đưa đẩy mình tìm hiểu về clean code, code smell', 1636702953412, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1636703006981, N'C0CC423E-F36B-1410-8F4C-00ECC295C0E9');
+Cuộc đời 1 lập trình viên từ khi bắt đầu với các dòng code, tập tành viết unit test rồi cơ duyên đưa đẩy mình tìm hiểu về clean code, code smell', 1636702953412, N'2C1F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 0, N'C0CC423E-F36B-1410-8F4C-00ECC295C0E9');
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'9141433E-F36B-1410-8F4D-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2FTailwind-Css.jpg?alt=media&token=ddf5e200-14b8-4df7-ad56-c79d0f249066', N'Tailwind CSS - Rapidly build modern websites without ever', N'Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it''s easy to build the same component with a completely different look in the next project.', N'A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.', 1636791408893, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'F51E433E-F36B-1410-8934-008CAF34AFE2', 1636797679447, N'8C41433E-F36B-1410-8F4D-00ECC295C0E9');
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'5B65433E-F36B-1410-8F4E-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fgit.png?alt=media&token=0b60f1db-80b7-4788-b659-51d62d8194b0', N'What is GitHub?', N'What is GitHub?
+GitHub is a web-based interface that uses Git, the open source version control software that lets multiple people make separate changes to web pages at the same time. As Carpenter notes, because it allows for real-time collaboration, GitHub encourages teams to work together to build and edit their site content.
+
+How Can GitHub Help My Team and Me?
+GitHub allows multiple developers to work on a single project at the same time, reduces the risk of duplicative or conflicting work, and can help decrease production time. With GitHub, developers can build code, track changes, and innovate solutions to problems that might arise during the site development process simultaneously. Non-developers can also use it to create, edit, and update website content, which Carpenter demonstrates in her tutorial.
+
+How Do I Speak GitHub?
+During the video, Carpenter defines some of the common terms teams will need to understand when using GitHub. They are:
+
+Repository (repo) — a folder in which all files and their version histories are stored.
+Branch — a workspace in which you can make changes that won’t affect the live site.
+Markdown (.md) — a way to write in Github that converts plain text to GitHub code. Sites such as Atom and Sublime Text are examples of free resources for developers using Markdown.
+Commit Changes — a saved record of a change made to a file within the repo.
+Pull Request (PR) — the way to ask for changes made to a branch to be merged into another branch that also allows for multiple users to see, discuss and review work being done.
+Merge — after a pull request is approved, the commit will be pulled in (or merged) from one branch to another and then, deployed on the live site
+Issues — how work is tracked when using git. Issues allow users to report new tasks and content fixes, as well as allows users to track progress on a project board from beginning to end of a specific project.
+Federalist — a platform that securely deploys a website from a GitHub repository in minutes and lets users preview proposed and published changes.
+Carpenter notes that becoming fluent in GitHub terminology might seem intimidating at first, but the more team members engage with the platform, the easier it is to understand the ins and outs of GitHub.
+
+How Do I Use GitHub?
+In her live demonstration, Carpenter shows how files are changed and merged in GitHub. This can be done by any member on the team, developers and non-developers, that has access to a GitHub repository. The following is a step-by-step method in which GitHub users can develop their websites:
+
+Step 1 — Team members will open an issue via a project board.
+Step 2 — Team members will create a new branch from the most recent version of the main branch in the repository where the entire team works to avoid conflicts.
+Step 3 — Team members will add commits (edits/ changes) to their respective branches.
+Step 4 — Team members will open a pull request in which users can assign other team members to review content changes and internally discuss the details of the commits.
+Step 5 — After waiting for the Federalist build to complete, team members can preview the change on a test version of the website and request reviewers to approve or comment on the change. Once the reviewers approve the pull request, the commits merge into the main branch and are published on the live site.
+What Else Do I Need to Know About GitHub?
+Carpenter provides some helpful hints when using GitHub. For example, when starting a project using issues and project boards, she suggests GitHub users write their content on external word processors or via Google Docs, and then, save these files to their respective project boards. These steps allow developers and content creators to have a master copy of the file(s), thus helping them track changes over the course of a project.
+
+In addition, Carpenter suggests developers download GitHub Desktop. GitHub Desktop allows users to do everything that could be done on GitHub’s web interface, but locally on a user’s machine.
+
+GitHub is built to be a collaborative interface. By allowing multiple users to work on the same project simultaneously and requiring cross-team approval for pull requests, GitHub not only allows for, but encourages collaboration within design teams. Carpenter states that this type of collaboration can help produce a higher level of quality control.', N'GitHub is a web-based interface that uses Git.', 1636879278151, N'261F433E-F36B-1410-8934-008CAF34AFE2', null, 1636879575131, N'5665433E-F36B-1410-8F4E-00ECC295C0E9');
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'9BAA433E-F36B-1410-8F4F-00ECC295C0E9', null, N'406 Not Acceptable', N'
+![](https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/uploadimages%2FdatAntibonk.png?alt=media&token=de1ba29f-0131-4b06-9b6d-e729ade5943b)
+
+406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable', N'406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable406 Not Acceptable', 1636947017932, N'201F433E-F36B-1410-8934-008CAF34AFE2', null, 0, N'95AA433E-F36B-1410-8F4F-00ECC295C0E9');
+INSERT INTO FPTUBlog.dbo.blog (id, thumbnail_url, title, content, description, created_datetime, status_id, reviewer_id, review_datetime, blog_history_id) VALUES (N'B80F433E-F36B-1410-8F52-00ECC295C0E9', N'https://firebasestorage.googleapis.com/v0/b/fptu-dsc-blog-project.appspot.com/o/thumnails%2Fsdkman.png?alt=media&token=c25e52bc-9e87-4472-a50b-b9d719505b63', N'Install Multiple Versions of Java with SDKMAN', N'## What is SDKMAN?
+
+------
+
+SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits. This is very useful for managing Java versions as  well as Gradle, Maven etc..
+
+## Installation
+
+---
+
+Open up a terminal and enter:
+
+```bash
+curl -s "https://get.sdkman.io" | bash
+```
+
+This will add the following to your `.bashrc` or `.zshrc`:
+
+```bash
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/chris/.sdkman"
+[[ -s "/home/chris/.sdkman/bin/sdkman-init.sh" ]] && source "/home/chris/.sdkman/bin/sdkman-init.sh"
+```
+
+Now you can open a new terminal and run the following to confirm installation:
+
+```bash
+sdk version
+```
+
+## Install to a custom location
+
+---
+
+You can install to a custom location with the following command:
+
+```bash
+export SDKMAN_DIR="/usr/local/sdkman" && curl -s "https://get.sdkman.io" | bash
+```
+
+## Install without modifying shell config
+
+---
+
+If you don''t want it to modify your `.bashrc` or `.zshrc` then set `rcupdate=fale`:
+
+```bash
+curl -s "https://get.sdkman.io?rcupdate=false" | bash
+```
+
+## Using SDKMAN
+
+---
+
+SDKMAN will allow you to install a lot of different programs.
+
+### List all options to install
+
+```bash
+sdk ls
+```
+
+## Installing Java
+
+---
+
+Install default version:
+
+1
+
+```bash
+sdk install java
+```
+
+Find a specific version:
+
+1
+
+```bash
+sdk ls java
+```
+
+Install a specific version based on identifier from list:
+
+1
+
+```bash
+sdk install java 15.0.2.j9-adpt
+```
+
+Using a specific version:
+
+1
+
+```bash
+sdk use java 15.0.2.j9-adpt
+```
+
+Default a specific version:
+
+1
+
+```bash
+sdk default java 15.0.2.j9-adpt
+```
+
+To update sdkman:
+
+1
+
+```bash
+sdk update
+```
+
+**NOTE** All of the above commands will work for the other programs available such as:
+
+- gradle
+- maven
+- groovy
+- kotlin
+- spark
+- springboot
+
+## Getting help
+
+---
+
+```bash
+sdk help
+```
+
+## Optional Configuration
+
+---
+
+In `~/.sdkman/etc/config`
+
+```bash
+# make sdkman non-interactive, preferred for CI environments
+sdkman_auto_answer=true|false
+
+# perform automatic selfupdates
+sdkman_auto_selfupdate=true|false
+
+# disables SSL certificate verification
+# https://github.com/sdkman/sdkman-cli/issues/327
+# HERE BE DRAGONS....
+sdkman_insecure_ssl=true|false
+
+# configure curl timeouts
+sdkman_curl_connect_timeout=5
+sdkman_curl_continue=true
+sdkman_curl_max_time=10
+
+# subscribe to the beta channel
+sdkman_beta_channel=true
+
+# enable verbose debugging
+sdkman_debug_mode=true|false
+
+# enable colour mode
+sdkman_colour_enable=true|false
+
+# enable automatic env
+sdkman_auto_env=true|false
+```
+
+## References
+
+---
+
+[SDKMAN!](https://sdkman.io/)', N'SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits. This is very useful for managing Java versions as well as Gradle, Maven etc..', 1637470112368, N'261F433E-F36B-1410-8934-008CAF34AFE2', N'BF1E433E-F36B-1410-8934-008CAF34AFE2', 1637470183208, N'B60F433E-F36B-1410-8F52-00ECC295C0E9');

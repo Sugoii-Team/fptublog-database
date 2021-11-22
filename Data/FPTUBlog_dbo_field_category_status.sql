@@ -1,0 +1,2 @@
+INSERT INTO FPTUBlog.dbo.field_category_status (id, name) VALUES (N'85D0219F-DE4A-EC11-B315-5C879C6439F2', N'active');
+INSERT INTO FPTUBlog.dbo.field_category_status (id, name) VALUES (N'2A3EBDCE-4A4B-EC11-B315-5C879C6439F2', N'inactive');
